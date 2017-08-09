@@ -8,5 +8,19 @@
   "license": "MIT",
   "devDependencies": {
     "webpack": "^3.5.2"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "bootstrap": "4.0.0-alpha.6",
+    "entypo": "^2.0.0",
+    "flipclock": "^0.7.8",
+    "font-awesome": "^4.7.0",
+    "ionicons": "^3.0.0",
+    "magnific": "^0.0.0",
+    "masonry": "^0.0.2",
+    "modernizr": "^3.5.0",
+    "pikaday": "^1.6.1",
+    "skrollr": "^0.6.26",
+    "zoomerang": "^0.1.9"
   }
 }
