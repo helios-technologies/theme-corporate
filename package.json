@@ -1,0 +1,12 @@
+{
+  "name": "theme-core",
+  "version": "1.0.0",
+  "description": "Helios base theme",
+  "main": "index.js",
+  "repository": "https://github.com/helios-technologies/theme-core",
+  "author": "Helios",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^3.5.2"
+  }
+}
