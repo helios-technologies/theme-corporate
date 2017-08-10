@@ -1,0 +1,3 @@
+public/**/*
+!public/.keep
+node_modules

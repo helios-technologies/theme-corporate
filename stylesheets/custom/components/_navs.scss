@@ -48,7 +48,7 @@
     font-size: 23px;
     color: #7d8292;
 
-    &.active {
+    .active {
       background-color: #f4f4f7;
       color: #53565f;
     }
@@ -61,7 +61,7 @@
   }
 }
 
-&.iconav-inverse {
+.iconav-inverse {
   background-color: #30343e;
   border: none;
 
@@ -99,7 +99,7 @@
       left: -5px;
       margin: auto 0;
     }
-    
+
     .nav-header {
       text-transform: uppercase;
       padding: 0.5em 1em;
@@ -114,7 +114,7 @@
   }
 
   .nav-link {
-    &.active {
+    .active {
       color: #333;
       position: relative;
 

@@ -1,5 +1,5 @@
 .header-hero {
-  background: url('../images/unsplash/michael-benz-189971.jpg');
+  background: url('images/unsplash/michael-benz-189971.jpg');
   background-size: cover;
   background-position: center 0px;
   padding-top: 270px;
@@ -13,7 +13,7 @@
   }
 
   &--light {
-    background-image: url('../images/unsplash/jorg-angeli-220264.jpg');
+    background-image: url('images/unsplash/jorg-angeli-220264.jpg');
     border-bottom: 1px solid #DEE4EA;
 
     &:after {

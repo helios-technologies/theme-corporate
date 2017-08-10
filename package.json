@@ -6,7 +6,21 @@
   "repository": "https://github.com/helios-technologies/theme-core",
   "author": "Helios",
   "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack --watch"
+  },
   "devDependencies": {
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.30.1",
+    "image-webpack-loader": "^1.7.0",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
     "webpack": "^3.5.2"
   },
   "dependencies": {
@@ -16,11 +30,13 @@
     "flipclock": "^0.7.8",
     "font-awesome": "^4.7.0",
     "ionicons": "^3.0.0",
-    "magnific": "^0.0.0",
+    "jquery": "^3.2.1",
+    "magnific-popup": "^1.1.0",
     "masonry": "^0.0.2",
     "modernizr": "^3.5.0",
     "pikaday": "^1.6.1",
     "skrollr": "^0.6.26",
+    "tether": "^1.2.4",
     "zoomerang": "^0.1.9"
   }
 }
