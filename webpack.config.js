@@ -1,10 +1,11 @@
 const path = require('path');
+const glob = require('glob');
 const webpack = require('webpack');
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = {
+const config = {
   entry: './javascripts/theme.js',
   devServer: {
     contentBase: './public'
@@ -68,9 +69,8 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin('assets/theme.css'),
-    new HtmlWebpackPlugin({
-      template: 'library/index.html'
-    }),
+    new HtmlWebpackPlugin({template: 'library/index.html'}),
+    new HtmlWebpackPlugin({template: 'library/index-app.html', filename: 'index-app.html'}),
     new webpack.ProvidePlugin({
       jQuery: 'jquery',
       $: 'jquery',
@@ -78,3 +78,14 @@ module.exports = {
     }),
   ]
 };
+
+glob.sync('library/*.html').forEach((page) => {
+  config.plugins.push(
+    new HtmlWebpackPlugin({
+      filename: path.basename(page),
+      template: page
+    })
+  )
+});
+
+module.exports = config;
