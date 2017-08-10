@@ -6,6 +6,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './javascripts/theme.js',
+  devServer: {
+    contentBase: './public'
+  },
   output: {
     path: path.resolve(__dirname, 'public/'),
     filename: 'assets/theme.js'
