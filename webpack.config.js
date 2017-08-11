@@ -36,7 +36,8 @@ const config = {
         test: /\.(ico|jpg|jpeg|gif|png)$/,
         loader: 'file-loader',
         options: {
-          name: 'assets/[path][hash]-[name].[ext]',
+          name: '[path][hash]-[name].[ext]',
+          outputPath: 'assets/',
           limit: 25000
         }
       },
