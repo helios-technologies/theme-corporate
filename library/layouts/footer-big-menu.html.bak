@@ -7,12 +7,28 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
   <link rel="shortcut icon" href="/images/favicon.ico">
 
+  <!-- stylesheets -->
+  <link rel="stylesheet" type="text/css" href="scss/bootstrap/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="dist/theme.min.css" />
+
+  <!-- javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+  <script src="dist/theme.min.js"></script>
 </head>
 <body>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
-  <nav class="navbar navbar-toggleable-md navbar-light bg-transparent" role="navigation" style="border-bottom: 1px solid #f2f2f2;">
+  <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <nav class="navbar navbar-toggleable-md navbar-light fixed-top" role="navigation">
     <div class="container no-override">
       <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbar-collapse">
         <span class="navbar-toggler-icon"></span>
@@ -261,3 +277,158 @@
       </div>
     </div>
   </nav>
+
+  <div class="header-hero">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12 fadeInScaleDown">
+          <h2>
+            Footer Big Menu
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="spacial-features">
+    <section class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="header">
+            <h2>Complete control over your company</h2>
+            <p>
+              Core has both a web app and an android app to make your website easy and always available.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="feature">
+            <h3>
+              Have conversations with your friends
+            </h3>
+            <p>
+              Core is the perfect solution for web developers and designers. You can get an awesome website for your best projects and clients, and also get great support.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="feature">
+            <h3>
+              Keep your information private & secure
+            </h3>
+            <p>
+              Core is designed to make showing off your best projects extremely fast and simple. There are many ways to configure. Just go to the source, make changes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="feature">
+            <h3>
+              Explore new possibilities every day
+
+              <span class="badge-new">New</span>
+            </h3>
+            <p>
+              Core has both a web app and an android app to make your website easy and always available. It offers you all the designs in collaboration with smart people.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="feature">
+            <h3>
+              Enjoy a whole new set of options
+            </h3>
+            <p>
+              Core is designed to make showing off your best projects extremely fast and simple. There are many ways to configure, just go to the source and configure.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer-big-menu" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="cta text-center">
+            <h1 class="cta-title">
+              Getting started is easy. Create your account now.
+            </h1>
+            <a class="btn-shadow btn-shadow-info mr-md-1" href="#">
+              30 day free trial
+            </a>
+            <a class="btn-outline ml-md-1" href="#">
+              Explore features
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row menu">
+        <div class="col-md-3 col-lg-2">
+          <h3 class="menu-title">Products</h3>
+          <a class="menu-link" href="#">Core Enterprise</a>
+          <a class="menu-link" href="#">Core Healthcare</a>
+          <a class="menu-link" href="#">Core Security</a>
+        </div>
+        <div class="col-md-3 col-lg-2">
+          <h3 class="menu-title">Features</h3>
+          <a class="menu-link" href="#">Employees</a>
+          <a class="menu-link" href="#">Integrations</a>
+          <a class="menu-link" href="#">Subscriptions</a>
+          <a class="menu-link" href="#">Online payments</a>
+          <a class="menu-link" href="#">Antifraud system</a>
+          <a class="menu-link" href="#">Pricing</a>
+        </div>
+        <div class="col-md-3 col-lg-2">
+          <h3 class="menu-title">Resources</h3>
+          <a class="menu-link" href="#">Support center</a>
+          <a class="menu-link" href="#">Documentation</a>
+          <a class="menu-link" href="#">API reference</a>
+          <a class="menu-link" href="#">Customer stories</a>
+        </div>
+        <div class="col-md-3 col-lg-2">
+          <h3 class="menu-title">About</h3>
+          <a class="menu-link" href="#">What we believe</a>
+          <a class="menu-link" href="#">Careers</a>
+          <a class="menu-link" href="#">Partners</a>
+          <a class="menu-link" href="#">Press kit</a>
+          <a class="menu-link" href="#">Media</a>
+        </div>
+        <div class="col-md-3 col-lg-2">
+          <h3 class="menu-title">Get in touch</h3>
+          <a class="menu-link" href="#">support@spacial.com</a>
+          <a class="menu-link" href="#">(123) 455-1123</a>
+          <a class="menu-link" href="#">9am - 6pm CST</a>
+        </div>
+        <div class="col-md-3 col-lg-2 text-center">
+          <a class="social-link" href="#">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a class="social-link" href="#">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a class="social-link" href="#">
+            <i class="ion-social-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <span class="bottom">© 2019 Core Inc. All rights reserved. <a href="#">Terms of use</a></span>
+  </footer>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    // function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    // e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    // e.src='//www.google-analytics.com/analytics.js';
+    // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    // ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+  </script>
+</body>
+</html>

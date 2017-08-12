@@ -12,7 +12,8 @@ const config = {
   },
   output: {
     path: path.resolve(__dirname, 'public/'),
-    filename: 'assets/theme.js'
+    publicPath: '/',
+    filename: 'theme.js'
   },
   module: {
     loaders: [
@@ -37,41 +38,38 @@ const config = {
         loader: 'file-loader',
         options: {
           name: '[path][hash]-[name].[ext]',
-          outputPath: 'assets/',
           limit: 25000
         }
       },
       {
         test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'url-loader?limit=10000&mimetype=application/font-woff',
-        options: { name: 'assets/fonts/[name].[hash].[ext]' }
+        options: { name: 'fonts/[name].[hash].[ext]' }
       },
       {
         test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'url-loader?limit=10000&mimetype=application/font-woff',
-        options: { name: 'assets/fonts/[name].[hash].[ext]' }
+        options: { name: 'fonts/[name].[hash].[ext]' }
       },
       {
         test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'url-loader?limit=10000&mimetype=application/octet-stream',
-        options: { name: 'assets/fonts/[name].[hash].[ext]' }
+        options: { name: 'fonts/[name].[hash].[ext]' }
       },
       {
         test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'file-loader',
-        options: { name: 'assets/fonts/[name].[hash].[ext]' }
+        options: { name: 'fonts/[name].[hash].[ext]' }
       },
       {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'url-loader?limit=10000&mimetype=image/svg+xml',
-        options: { name: 'assets/fonts/[name].[hash].[ext]' }
+        options: { name: 'fonts/[name].[hash].[ext]' }
       }
     ]
   },
   plugins: [
-    new ExtractTextPlugin('assets/theme.css'),
-    new HtmlWebpackPlugin({template: 'library/index.html'}),
-    new HtmlWebpackPlugin({template: 'library/index-app.html', filename: 'index-app.html'}),
+    new ExtractTextPlugin('theme.css'),
     new webpack.ProvidePlugin({
       jQuery: 'jquery',
       $: 'jquery',

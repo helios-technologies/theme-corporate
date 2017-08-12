@@ -28,7 +28,8 @@
 
 /* icons */
 $fa-font-path: "~font-awesome/fonts";
-@import "~ionicons/dist/css/ionicons.css";
+$ionicons-font-path: "~ionicons/dist/fonts";
+@import "~ionicons/dist/scss/ionicons";
 @import "~font-awesome/scss/font-awesome";
 
 /* snippets */
