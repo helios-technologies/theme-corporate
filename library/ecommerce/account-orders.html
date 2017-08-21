@@ -1,0 +1,176 @@
+${require('../layouts/header-ecommerce.html')}
+
+<div class="account-page">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Order history</li>
+      </ol>
+
+      <div class="account-wrapper">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="nav-item">
+            <a class="nav-link active" href="account-orders.html" role="tab">My order history</a>
+          </li>
+          <li role="presentation" class="nav-item">
+            <a class="nav-link" href="account-wishlist.html" role="tab">My wishlist</a>
+          </li>
+          <li role="presentation" class="nav-item">
+            <a class="nav-link" href="account-profile.html" role="tab">My profile</a>
+          </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="orders">
+            <div class="tab-header clearfix">
+              <h4 class="float-left">
+                Orders last 6 months
+              </h4>
+              <select class="custom-select float-right">
+                <option>Last 6 months</option>
+                <option>Last 3 months</option>
+                <option>All orders</option>
+              </select>
+            </div>
+            <table class="table table-striped table-responsive">
+              <thead>
+                <tr>
+                  <th>Order ID</th>
+                  <th>Date</th>
+                  <th>Items</th>
+                  <th>Total Price</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="account-invoice.html">#12083491</a>
+                  </td>
+                  <td>
+                    13 July, 2018
+                  </td>
+                  <td>
+                    3
+                  </td>
+                  <td>
+                    $1,999
+                  </td>
+                  <td>
+                    <span class="badge badge-info">Shipping</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="account-invoice.html">#86529027</a>
+                  </td>
+                  <td>
+                    21 March, 2018
+                  </td>
+                  <td>
+                    4
+                  </td>
+                  <td>
+                    $3,299
+                  </td>
+                  <td>
+                    <span class="badge badge-success">Delivered</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="account-invoice.html">#67458035</a>
+                  </td>
+                  <td>
+                    03 February, 2018
+                  </td>
+                  <td>
+                    3
+                  </td>
+                  <td>
+                    $2,459
+                  </td>
+                  <td>
+                    <span class="badge badge-warning">Canceled</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="account-invoice.html">#16274825</a>
+                  </td>
+                  <td>
+                    10 February, 2018
+                  </td>
+                  <td>
+                    1
+                  </td>
+                  <td>
+                    $299
+                  </td>
+                  <td>
+                    <span class="badge badge-success">Delivered</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="account-invoice.html">#75827177</a>
+                  </td>
+                  <td>
+                    27 January, 2018
+                  </td>
+                  <td>
+                    5
+                  </td>
+                  <td>
+                    $5,789
+                  </td>
+                  <td>
+                    <span class="badge badge-success">Delivered</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="account-invoice.html">#57825467</a>
+                  </td>
+                  <td>
+                    05 January, 2018
+                  </td>
+                  <td>
+                    4
+                  </td>
+                  <td>
+                    $3,999
+                  </td>
+                  <td>
+                    <span class="badge badge-primary">Processing</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="account-invoice.html">#38012894</a>
+                  </td>
+                  <td>
+                    18 December, 2017
+                  </td>
+                  <td>
+                    2
+                  </td>
+                  <td>
+                    $2,099
+                  </td>
+                  <td>
+                    <span class="badge badge-success">Delivered</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+${require('../layouts/footer-ecommerce.html')}

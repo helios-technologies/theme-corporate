@@ -1,0 +1,85 @@
+${require('../layouts/header-ecommerce.html')}
+
+<div id="checkout">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <section>
+            <div id="checkout-order-done">
+              <header>
+                <i class="ion-ios-checkmark-outline"></i>
+                <h1>
+                  Your order has been placed successfully!
+                </h1>
+              </header>
+              <p>
+                An e-mail has been sent to <strong>client@gmail.com</strong> with a confirmation and a receipt for your order summary, for any doubts you can contact us at support@ecommerce.com.
+              </p>
+              <a href="index.html">
+                Go back to Home Page
+              </a>
+            </div>
+          </section>
+        </div>
+        <div class="col-md-6">
+          <div id="checkout-cart-summary" class="clearfix float-right">
+            <h3>Order Summary</h3>
+            <div class="line-items">
+              <div class="item clearfix">
+                <div class="pic">
+                  <img src="../../images/ecommerce/product-11.jpg" class="img-responsive" />
+                </div>
+                <div class="details">
+                  <span class="name">
+                    Blue Elegant Pull-over Shirt x 1
+                  </span>
+                  <span class="variant">
+                    Long-sleeve
+                  </span>
+                </div>
+                <div class="price float-right">
+                  $200.00
+                </div>
+              </div>
+              <div class="item clearfix">
+                <div class="pic">
+                  <img src="../../images/ecommerce/product-12.jpg" class="img-responsive" />
+                </div>
+                <div class="details">
+                  <span class="name">
+                    Long-sleeve Formal Shirt x 2
+                  </span>
+                  <span class="variant">
+                    M size
+                  </span>
+                </div>
+                <div class="price float-right">
+                  $349.00
+                </div>
+              </div>
+            </div>
+            <div class="price-details">
+              <div class="detail clearfix">
+                <p>Subtotal</p>
+                <span>$549.99</span>
+              </div>
+              <div class="detail clearfix">
+                <p>Shipping</p>
+                <span>$39.99</span>
+              </div>
+              <div class="detail clearfix">
+                <p>Taxes</p>
+                <span>$15.00</span>
+              </div>
+              <div class="total-price clearfix">
+                <p>Total payment</p>
+                <span>$605.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+${require('../layouts/footer-ecommerce.html')}

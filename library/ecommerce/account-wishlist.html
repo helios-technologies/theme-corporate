@@ -1,0 +1,184 @@
+${require('../layouts/header-ecommerce.html')}
+
+<div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#">Home</a>
+        </li>
+        <li class="breadcrumb-item active">My wishlist</li>
+      </ol>
+
+      <div class="account-wrapper">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="nav-item">
+            <a class="nav-link" href="account-orders.html" role="tab">My order history</a>
+          </li>
+          <li role="presentation" class="nav-item">
+            <a class="nav-link active" href="account-wishlist.html" role="tab">My wishlist</a>
+          </li>
+          <li role="presentation" class="nav-item">
+            <a class="nav-link" href="account-profile.html" role="tab">My profile</a>
+          </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="wishlist">
+            <div class="tab-header clearfix">
+              <h4 class="float-left">
+                My Wishlist
+              </h4>
+              <select class="custom-select float-right">
+                <option>Date added</option>
+                <option>Price (ascending)</option>
+                <option>Price (descending)</option>
+              </select>
+            </div>
+            <table class="table wishlist-table table-responsive">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Name</th>
+                  <th>Unit Price</th>
+                  <th>Status</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="#" class="btn-remove" data-toggle="tooltip" title="Remove from list">
+                      <i class="ion-close"></i>
+                    </a>
+                    <a href="product.html" class="product-img">
+                      <img src="../../images/ecommerce/product-11.jpg" >
+                    </a>
+                  </td>
+                  <td>
+                    Blue Elegant Pull-over Shirt
+                    <div class="rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-half-o"></i>
+                    </div>
+                  </td>
+                  <td>
+                    $569
+                  </td>
+                  <td>
+                    <span class="label label-info">In Stock</span>
+                  </td>
+                  <td>
+                    <a href="#">
+                      <i class="ion-plus"></i>
+                      Add to cart
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="btn-remove" data-toggle="tooltip" title="Remove from list">
+                      <i class="ion-close"></i>
+                    </a>
+                    <a href="product.html" class="product-img">
+                      <img src="../../images/ecommerce/product-12.jpg" >
+                    </a>
+                  </td>
+                  <td>
+                    Long-sleeve Formal Shirt for Men
+                    <div class="rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-o"></i>
+                    </div>
+                  </td>
+                  <td>
+                    $799
+                  </td>
+                  <td>
+                    <span class="label label-info">In Stock</span>
+                  </td>
+                  <td>
+                    <a href="#">
+                      <i class="ion-plus"></i>
+                      Add to cart
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="btn-remove" data-toggle="tooltip" title="Remove from list">
+                      <i class="ion-close"></i>
+                    </a>
+                    <a href="product.html" class="product-img">
+                      <img src="../../images/ecommerce/product-18.jpg" >
+                    </a>
+                  </td>
+                  <td>
+                    Big backpack
+                    <div class="rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-half-o"></i>
+                    </div>
+                  </td>
+                  <td>
+                    $1,999
+                  </td>
+                  <td>
+                    <span class="label label-info">In Stock</span>
+                  </td>
+                  <td>
+                    <a href="#">
+                      <i class="ion-plus"></i>
+                      Add to cart
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="btn-remove" data-toggle="tooltip" title="Remove from list">
+                      <i class="ion-close"></i>
+                    </a>
+                    <a href="product.html" class="product-img">
+                      <img src="../../images/ecommerce/product-14.jpg" >
+                    </a>
+                  </td>
+                  <td>
+                    Large size formal shoes
+                    <div class="rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-half-o"></i>
+                    </div>
+                  </td>
+                  <td>
+                    $399
+                  </td>
+                  <td>
+                    <span class="label label-info">In Stock</span>
+                  </td>
+                  <td>
+                    <a href="#">
+                      <i class="ion-plus"></i>
+                      Add to cart
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+${require('../layouts/footer-ecommerce.html')}

@@ -1,0 +1,126 @@
+${require('../layouts/header-ecommerce.html')}
+
+<div id="checkout">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <section>
+            <h1>Client information</h1>
+
+            <div class="field-group">
+              <div class="field">
+                <label for="field-name">Your name</label>
+                <input id="field-name" type="text" class="form-control" placeholder="Your full name" />
+              </div>
+              <div class="field">
+                <label for="field-email">Email address</label>
+                <input id="field-email" type="email" class="form-control" placeholder="Email address" />
+              </div>
+            </div>
+
+            <h2>
+              Shipping address
+            </h2>
+
+            <div class="field-group">
+              <div class="field">
+                <label for="field-address">Address</label>
+                <input id="field-address" type="text" class="form-control" placeholder="Street, interior number, etc" />
+              </div>
+              <div class="field">
+                <label for="field-city">City</label>
+                <input id="field-city" type="text" class="form-control" placeholder="City" />
+              </div>
+              <div class="field">
+                <label for="field-zip">ZIP Code</label>
+                <input id="field-zip" type="text" class="form-control" placeholder="ZIP Code" />
+              </div>
+              <div class="field field--with-dropdown clearfix">
+                <label for="field-country">Country</label>
+                <select id="field-country">
+                  <option>Country</option>
+                  <option>United States</option>
+                  <option>Canada</option>
+                  <option>France</option>
+                  <option>UK</option>
+                  <option>Germany</option>
+                  <option>Belgium</option>
+                  <option>Australia</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="field-phone">Phone</label>
+                <input id="field-phone" type="text" class="form-control" placeholder="Phone" />
+              </div>
+            </div>
+
+            <div class="text-right">
+              <a href="checkout-payment.html" class="checkout-btn-next-step">
+                Shipping & Payment
+                <i class="ion-chevron-right"></i>
+              </a>
+            </div>
+          </section>
+        </div>
+        <div class="col-md-6">
+          <div id="checkout-cart-summary" class="clearfix float-right">
+            <h3>Order Summary</h3>
+            <div class="line-items">
+              <div class="item clearfix">
+                <div class="pic">
+                  <img src="../../images/ecommerce/product-11.jpg" class="img-responsive" />
+                </div>
+                <div class="details">
+                  <span class="name">
+                    Blue Elegant Pull-over Shirt x 1
+                  </span>
+                  <span class="variant">
+                    Long-sleeve
+                  </span>
+                </div>
+                <div class="price float-right">
+                  $200.00
+                </div>
+              </div>
+              <div class="item clearfix">
+                <div class="pic">
+                  <img src="../../images/ecommerce/product-12.jpg" class="img-responsive" />
+                </div>
+                <div class="details">
+                  <span class="name">
+                    Long-sleeve Formal Shirt x 2
+                  </span>
+                  <span class="variant">
+                    M size
+                  </span>
+                </div>
+                <div class="price float-right">
+                  $349.00
+                </div>
+              </div>
+            </div>
+            <div class="price-details">
+              <div class="detail clearfix">
+                <p>Subtotal</p>
+                <span>$549.99</span>
+              </div>
+              <div class="detail clearfix">
+                <p>Shipping</p>
+                <span>$39.99</span>
+              </div>
+              <div class="detail clearfix">
+                <p>Taxes</p>
+                <span>$15.00</span>
+              </div>
+              <div class="total-price clearfix">
+                <p>Total payment</p>
+                <span>$605.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+${require('../layouts/footer-ecommerce.html')}

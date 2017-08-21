@@ -1,0 +1,192 @@
+${require('../layouts/header-ecommerce.html')}
+
+<div class="store-cart-header">
+    <div class="container">
+      <h3>Shopping Cart</h3>
+    </div>
+  </div>
+
+  <div class="cart">
+    <div class="container">
+      <div class="row cart-headers d-none d-md-flex">
+        <div class="col-md-5">
+          <span>Item:</span>
+        </div>
+        <div class="col-md-2">
+          <span class="price">Price:</span>
+        </div>
+        <div class="col-md-2">
+          <span>Qty:</span>
+        </div>
+        <div class="col-md-3">
+          <span class="price">Total:</span>
+        </div>
+      </div>
+      <div class="row cart-product">
+        <div class="col-md-2">
+          <a href="product.html" class="image">
+            <img src="../../images/ecommerce/product-11.jpg" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="product.html" class="name">
+            Handmade Bag Collectors Edition
+          </a>
+          <div class="vendor">Vintage clothing</div>
+          <div class="variant">
+            color
+            <span class="variant-color color--blue"></span>
+          </div>
+        </div>
+        <div class="col-md-2 col-3">
+          <span class="price">
+            $89.00
+          </span>
+        </div>
+        <div class="col-md-2 col-3">
+          <input type="number" min="1" max="99" value="2" class="form-control input-qty" />
+        </div>
+        <div class="col-md-2 col-3">
+          <span class="price">
+            $178.00
+          </span>
+        </div>
+        <div class="col-md-1 col-3">
+          <a href="#" class="remove">
+            <i class="fa fa-remove"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row cart-product">
+        <div class="col-md-2">
+          <a href="product.html" class="image">
+            <img src="../../images/ecommerce/product-18.jpg" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="product.html" class="name">
+            Purple Winter boots
+          </a>
+          <div class="vendor">Vintage clothing</div>
+          <div class="variant">
+            Color
+            <span class="variant-color color--brown"></span>
+          </div>
+        </div>
+        <div class="col-md-2 col-3">
+          <span class="price">
+            $299.00
+          </span>
+        </div>
+        <div class="col-md-2 col-3">
+          <input type="number" min="1" max="99" value="1" class="form-control input-qty" />
+        </div>
+        <div class="col-md-2 col-3">
+          <span class="price">
+            $299.00
+          </span>
+        </div>
+        <div class="col-md-1 col-3">
+          <a href="#" class="remove">
+            <i class="fa fa-remove"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row cart-product">
+        <div class="col-md-2">
+          <a href="product.html" class="image">
+            <img src="../../images/ecommerce/product-12.jpg" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="product.html" class="name">
+            Nikon Camera LT300
+          </a>
+          <div class="vendor">Nikon</div>
+          <div class="variant">
+            color
+            <span class="variant-color color--brown"></span>
+          </div>
+          <div class="variant">
+            Size
+            <span class="variant-size">M</span>
+          </div>
+        </div>
+        <div class="col-md-2 col-3">
+          <span class="price">
+            $289.00
+          </span>
+        </div>
+        <div class="col-md-2 col-3">
+          <input type="number" min="1" max="99" value="1" class="form-control input-qty" />
+        </div>
+        <div class="col-md-2 col-3">
+          <span class="price">
+            $289.00
+          </span>
+        </div>
+        <div class="col-md-1 col-3">
+          <a href="#" class="remove">
+            <i class="fa fa-remove"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row cart-product">
+        <div class="col-md-2">
+          <a href="product.html" class="image">
+            <img src="../../images/ecommerce/product-13.jpg" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="product.html" class="name">
+            Purple Winter boots
+          </a>
+          <div class="vendor">Vintage clothing</div>
+          <div class="variant">
+            Size
+            <span class="variant-size">S</span>
+          </div>
+        </div>
+        <div class="col-md-2 col-3">
+          <span class="price">
+            $109.00
+          </span>
+        </div>
+        <div class="col-md-2 col-3">
+          <input type="number" min="1" max="99" value="1" class="form-control input-qty" />
+        </div>
+        <div class="col-md-2 col-3">
+          <span class="price">
+            $109.00
+          </span>
+        </div>
+        <div class="col-md-1 col-3">
+          <a href="#" class="remove">
+            <i class="fa fa-remove"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cart-total">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-lg-9">
+          <div class="discount">
+            <input type="text" class="input-discount" placeholder="Enter a promo code" />
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <div class="total">
+            <div class="price">$576.00 USD</div>
+            <span>Excluding tax and shipping</span>
+            <a href="checkout.html" class="btn-shadow btn-shadow-info">Go to checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+${require('../layouts/footer-ecommerce.html')}

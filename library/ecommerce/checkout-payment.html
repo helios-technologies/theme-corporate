@@ -1,0 +1,171 @@
+${require('../layouts/header-ecommerce.html')}
+
+<div id="checkout">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <section>
+            <h1>Shipping method</h1>
+
+            <div class="field-group">
+              <div class="field field--with-radio">
+                <input type="radio" id="standard-shipping" name="shipping-method" checked="checked" />
+                <label for="standard-shipping">
+                  $10 Standard
+                  <strong class="right-note">
+                    5-10 days
+                  </strong>
+                </label>
+              </div>
+              <div class="field field--with-radio">
+                <input type="radio" id="ultra-speed" name="shipping-method" />
+                <label for="ultra-speed">
+                  $20 Ultra speed
+                  <strong class="right-note">
+                    1-3 days
+                  </strong>
+                </label>
+              </div>
+            </div>
+
+            <hr>
+
+            <h1>
+              Payment method
+            </h1>
+
+            <div class="field-group">
+              <div class="field field--with-radio field--with-form">
+                <input type="radio" id="credit-card-method" name="payment-method" checked="checked" data-toggle-on-checked=".field-group--credit-card" />
+                <label for="credit-card-method">
+                  Credit Card
+                  <strong class="right-note">
+                    <img src="../../images/ecommerce/cc-visa.png" />
+                    <img src="../../images/ecommerce/cc-mastercard.png" />
+                    <img src="../../images/ecommerce/cc-amex.png" />
+                  </strong>
+                </label>
+              </div>
+              <div class="field-group field-group--nested field-group--credit-card">
+                <div class="field">
+                  <label for="field-card-name">Name on card</label>
+                  <input id="field-card-name" type="text" class="form-control" placeholder="Name on card" />
+                </div>
+                <div class="field">
+                  <label for="field-card-number">Card number</label>
+                  <input id="field-card-number" type="text" class="form-control" placeholder="Card number" />
+                </div>
+                <div class="field field--with-dropdown clearfix">
+                  <label for="field-country">Expire date</label>
+                  <div class="select--half">
+                    <select id="field-month">
+                      <option>Month</option>
+                      <option>01</option>
+                      <option>02</option>
+                      <option>03</option>
+                      <option>04</option>
+                      <option>05</option>
+                      <option>06</option>
+                      <option>07</option>
+                      <option>08</option>
+                      <option>09</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                    </select>
+                    <select id="field-year">
+                      <option>Year</option>
+                      <option>2015</option>
+                      <option>2016</option>
+                      <option>2017</option>
+                      <option>2018</option>
+                      <option>2019</option>
+                      <option>2020</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="field-cvv">CVV</label>
+                  <input id="field-cvv" type="text" class="form-control" placeholder="CVV" />
+                </div>
+              </div>
+              <div class="field field--with-radio">
+                <input type="radio" id="paypal-method" name="payment-method" />
+                <label for="paypal-method">
+                  PayPal
+                </label>
+              </div>
+            </div>
+            <div class="actions">
+              <a href="checkout.html" class="checkout-btn-step-back">
+                <i class="ion-chevron-left"></i>
+                Client information
+              </a>
+              <a href="checkout-confirmation.html" class="checkout-btn-place-order float-right">
+                Place order
+              </a>
+            </div>
+          </section>
+        </div>
+        <div class="col-md-6">
+          <div id="checkout-cart-summary" class="clearfix float-right">
+            <h3>Order Summary</h3>
+            <div class="line-items">
+              <div class="item clearfix">
+                <div class="pic">
+                  <img src="../../images/ecommerce/product-11.jpg" class="img-responsive" />
+                </div>
+                <div class="details">
+                  <span class="name">
+                    Blue Elegant Pull-over Shirt x 1
+                  </span>
+                  <span class="variant">
+                    Long-sleeve
+                  </span>
+                </div>
+                <div class="price float-right">
+                  $200.00
+                </div>
+              </div>
+              <div class="item clearfix">
+                <div class="pic">
+                  <img src="../../images/ecommerce/product-12.jpg" class="img-responsive" />
+                </div>
+                <div class="details">
+                  <span class="name">
+                    Long-sleeve Formal Shirt x 2
+                  </span>
+                  <span class="variant">
+                    M size
+                  </span>
+                </div>
+                <div class="price float-right">
+                  $349.00
+                </div>
+              </div>
+            </div>
+            <div class="price-details">
+              <div class="detail clearfix">
+                <p>Subtotal</p>
+                <span>$549.99</span>
+              </div>
+              <div class="detail clearfix">
+                <p>Shipping</p>
+                <span>$39.99</span>
+              </div>
+              <div class="detail clearfix">
+                <p>Taxes</p>
+                <span>$15.00</span>
+              </div>
+              <div class="total-price clearfix">
+                <p>Total payment</p>
+                <span>$605.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+${require('../layouts/footer-ecommerce.html')}
