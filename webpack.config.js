@@ -87,4 +87,15 @@ glob.sync('library/*.html').forEach((page) => {
   )
 });
 
+glob.sync('library/docs/*.html').forEach((page) => {
+  config.plugins.push(
+    new HtmlWebpackPlugin({
+      filename: path.basename(page),
+      template: page
+    })
+  )
+});
+
+
+
 module.exports = config;

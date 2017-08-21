@@ -1,0 +1,225 @@
+${require('./../layouts/header.html')}
+  <div class="theme-docs-header">
+    <section class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10">
+          <h1>Animations</h1>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="theme-docs-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <p class="lead mt-4">
+            Trigger animations to elements when they become visible.
+          </p>
+          <div class="panel">
+            <div class="panel-body">
+              <div class="bg-faded p-4 rounded" data-animate="fadeInScale">
+                Fade in scale
+              </div>
+            </div>
+            <div class="panel-footer">
+              <pre>
+<code class="html">
+&lt;div class="bg-faded p-4 rounded" data-animate="fadeInScale">
+  Fade in scale
+&lt;/div></code></pre>
+            </div>
+          </div>
+
+          <br>
+
+          <h5>
+            Data options
+          </h5>
+          <p class="mt-4">
+            <code>data-animate="EFFECT"</code> to the element you want to animate.
+          </p>
+          <p class="mt-3">
+            <code>data-animate-delay="TIME"</code> Time in seconds or milliseconds to add a delay.
+          </p>
+          <p class="mt-3">
+            <code>data-animate-duration="TIME"</code> Time in seconds or milliseconds to set the duration of the effect (default is 1 second).
+          </p>
+          <p class="mt-3">
+            <code>data-animate-infinite="true"</code> To run the animation in a loop.
+          </p>
+
+          <br>
+
+          <h6 class="mt-2">Example:</h6>
+
+          <a href="#" class="run-again">Run again</a>
+
+          <script type="text/javascript">
+            $(function () {
+              var $btn = $('.run-again')
+
+              $btn.click(function (e) {
+                e.preventDefault()
+                $('[data-animate]').removeClass('animated fadeIn animated-end')
+                $(window).scrollTop($(window).scrollTop()+1);
+              })
+            })
+          </script>
+
+          <div class="panel">
+            <div class="panel-body">
+              <div class="p-3 lead">
+                <span data-animate="fadeIn">Hello</span>
+                <span data-animate="fadeIn" data-animate-delay=".4">world,</span>
+                <span data-animate="fadeIn" data-animate-delay=".9">how</span>
+                <span data-animate="fadeIn" data-animate-delay="1.4">are</span>
+                <span data-animate="fadeIn" data-animate-delay="1.8">you!?</span>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <pre>
+<code class="html">
+&lt;span data-animate="fadeIn">Hello&lt;/span>
+&lt;span data-animate="fadeIn" data-animate-delay=".4">World,&lt;/span>
+&lt;span data-animate="fadeIn" data-animate-delay=".9">how&lt;/span>
+&lt;span data-animate="fadeIn" data-animate-delay="1.4">are&lt;/span>
+&lt;span data-animate="fadeIn" data-animate-delay="1.8">you!?&lt;/span></code></pre>
+            </div>
+          </div>
+
+          <br>
+
+          <h6 class="mt-2">Effects</h6>
+          <p>
+            You can see them in action <a href="https://daneden.github.io/animate.css/" target="_blank">here</a>.
+          </p>
+
+          <ul class="list-unstyled row mt-4">
+            <li class="col-md-3"><code>bounce</code></li>
+            <li class="col-md-3"><code>flash</code></li>
+            <li class="col-md-3"><code>pulse</code></li>
+            <li class="col-md-3"><code>rubberBand</code></li>
+            <li class="col-md-3"><code>shake</code></li>
+            <li class="col-md-3"><code>headShake</code></li>
+            <li class="col-md-3"><code>swing</code></li>
+            <li class="col-md-3"><code>tada</code></li>
+            <li class="col-md-3"><code>wobble</code></li>
+            <li class="col-md-3"><code>jello</code></li>
+            <li class="col-md-3"><code>bounceIn</code></li>
+            <li class="col-md-3"><code>bounceInDown</code></li>
+            <li class="col-md-3"><code>bounceInLeft</code></li>
+            <li class="col-md-3"><code>bounceInRight</code></li>
+            <li class="col-md-3"><code>bounceInUp</code></li>
+            <li class="col-md-3"><code>bounceOut</code></li>
+            <li class="col-md-3"><code>bounceOutDown</code></li>
+            <li class="col-md-3"><code>bounceOutLeft</code></li>
+            <li class="col-md-3"><code>bounceOutRight</code></li>
+            <li class="col-md-3"><code>bounceOutUp</code></li>
+            <li class="col-md-3"><code>fadeIn</code></li>
+            <li class="col-md-3"><code>fadeInDown</code></li>
+            <li class="col-md-3"><code>fadeInDownBig</code></li>
+            <li class="col-md-3"><code>fadeInLeft</code></li>
+            <li class="col-md-3"><code>fadeInLeftBig</code></li>
+            <li class="col-md-3"><code>fadeInRight</code></li>
+            <li class="col-md-3"><code>fadeInRightBig</code></li>
+            <li class="col-md-3"><code>fadeInUp</code></li>
+            <li class="col-md-3"><code>fadeInUpBig</code></li>
+            <li class="col-md-3"><code>fadeInScale</code></li>
+            <li class="col-md-3"><code>fadeInScaleDown</code></li>
+            <li class="col-md-3"><code>fadeOut</code></li>
+            <li class="col-md-3"><code>fadeOutDown</code></li>
+            <li class="col-md-3"><code>fadeOutDownBig</code></li>
+            <li class="col-md-3"><code>fadeOutLeft</code></li>
+            <li class="col-md-3"><code>fadeOutLeftBig</code></li>
+            <li class="col-md-3"><code>fadeOutRight</code></li>
+            <li class="col-md-3"><code>fadeOutRightBig</code></li>
+            <li class="col-md-3"><code>fadeOutUp</code></li>
+            <li class="col-md-3"><code>fadeOutUpBig</code></li>
+            <li class="col-md-3"><code>flipInX</code></li>
+            <li class="col-md-3"><code>flipInY</code></li>
+            <li class="col-md-3"><code>flipOutX</code></li>
+            <li class="col-md-3"><code>flipOutY</code></li>
+            <li class="col-md-3"><code>lightSpeedIn</code></li>
+            <li class="col-md-3"><code>lightSpeedOut</code></li>
+            <li class="col-md-3"><code>rotateIn</code></li>
+            <li class="col-md-3"><code>rotateInDownLeft</code></li>
+            <li class="col-md-3"><code>rotateInDownRight</code></li>
+            <li class="col-md-3"><code>rotateInUpLeft</code></li>
+            <li class="col-md-3"><code>rotateInUpRight</code></li>
+            <li class="col-md-3"><code>rotateOut</code></li>
+            <li class="col-md-3"><code>rotateOutDownLeft</code></li>
+            <li class="col-md-3"><code>rotateOutDownRight</code></li>
+            <li class="col-md-3"><code>rotateOutUpLeft</code></li>
+            <li class="col-md-3"><code>rotateOutUpRight</code></li>
+            <li class="col-md-3"><code>hinge</code></li>
+            <li class="col-md-3"><code>jackInTheBox</code></li>
+            <li class="col-md-3"><code>rollIn</code></li>
+            <li class="col-md-3"><code>rollOut</code></li>
+            <li class="col-md-3"><code>zoomIn</code></li>
+            <li class="col-md-3"><code>zoomInDown</code></li>
+            <li class="col-md-3"><code>zoomInLeft</code></li>
+            <li class="col-md-3"><code>zoomInRight</code></li>
+            <li class="col-md-3"><code>zoomInUp</code></li>
+            <li class="col-md-3"><code>zoomOut</code></li>
+            <li class="col-md-3"><code>zoomOutDown</code></li>
+            <li class="col-md-3"><code>zoomOutLeft</code></li>
+            <li class="col-md-3"><code>zoomOutRight</code></li>
+            <li class="col-md-3"><code>zoomOutUp</code></li>
+            <li class="col-md-3"><code>slideInDown</code></li>
+            <li class="col-md-3"><code>slideInLeft</code></li>
+            <li class="col-md-3"><code>slideInRight</code></li>
+            <li class="col-md-3"><code>slideInUp</code></li>
+            <li class="col-md-3"><code>slideOutDown</code></li>
+            <li class="col-md-3"><code>slideOutLeft</code></li>
+            <li class="col-md-3"><code>slideOutRight</code></li>
+            <li class="col-md-3"><code>slideOutUp</code></li>
+          </ul>
+
+        </div>
+
+        <div class="col-md-3">
+          <!-- @include('./sidebar.html', {"page": "icons"}) -->
+          <nav class="nav-sidebar">
+            <ul class="nav flex-column">
+              <li><a href="intro.html" class="nav-link">Intro</a></li>
+              <li><a href="alerts.html" class="nav-link">Alerts</a></li>
+              <li><a href="animations.html" class="nav-link active">Animations</a></li>
+              <li><a href="badges.html" class="nav-link">Badges</a></li>
+              <li><a href="buttons.html" class="nav-link">Buttons</a></li>
+              <li><a href="button-groups.html" class="nav-link">Button groups</a></li>
+              <li><a href="cards.html" class="nav-link">Cards</a></li>
+              <li><a href="carousel.html" class="nav-link">Carousel</a></li>
+              <li><a href="accordion.html" class="nav-link">Accordion</a></li>
+              <li><a href="cta.html" class="nav-link">Call to actions</a></li>
+              <li><a href="dropdowns.html" class="nav-link">Dropdowns</a></li>
+              <li><a href="forms.html" class="nav-link">Forms</a></li>
+              <li><a href="grid-system.html" class="nav-link">Grid system</a></li>
+              <li><a href="input-groups.html" class="nav-link">Input groups</a></li>
+              <li><a href="icons.html" class="nav-link">Icons</a></li>
+              <li><a href="list-groups.html" class="nav-link">List groups</a></li>
+              <li><a href="modals.html" class="nav-link">Modals</a></li>
+              <li><a href="navs.html" class="nav-link">Navs</a></li>
+              <li><a href="navbars.html" class="nav-link">Navbars</a></li>
+              <li><a href="plugins.html" class="nav-link">Plugins</a></li>
+              <li><a href="progress.html" class="nav-link">Progress bars</a></li>
+              <li><a href="stats-cards.html" class="nav-link">Stats cards</a></li>
+              <li><a href="tables.html" class="nav-link">Tables</a></li>
+              <li><a href="typography.html" class="nav-link">Typography</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $(function () {
+      // code highlighter
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    })
+  </script>
+</body>
+</html>
