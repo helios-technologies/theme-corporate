@@ -1,0 +1,233 @@
+${require('./../library/layouts/header.html')}
+<div class="theme-docs-header">
+    <section class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10">
+          <h1>Progress bars</h1>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="theme-docs-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <h4 class="mt-4">
+            Default bars
+          </h4>
+          <div class="panel">
+            <div class="panel-body">
+              <div class="progress mb-2">
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress mb-2">
+                <div class="progress-bar w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress mb-2">
+                <div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress mb-2">
+                <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <br>
+              <div class="progress mb-2 mt-3">
+                <div class="progress-bar w-25" role="progressbar"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+              </div>
+              <div class="progress mb-2">
+                <div class="progress-bar w-50" role="progressbar"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+              </div>
+              <div class="progress mb-2">
+                <div class="progress-bar w-75" role="progressbar"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar w-100" role="progressbar"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100%</div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <pre>
+<code class="html">
+&lt;div class="progress">
+  &lt;div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+&lt;/div>
+&lt;div class="progress">
+  &lt;div class="progress-bar w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+&lt;/div>
+&lt;div class="progress">
+  &lt;div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+&lt;/div>
+&lt;div class="progress">
+  &lt;div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+&lt;/div>
+&lt;div class="progress">
+  &lt;div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+&lt;/div>
+  
+&lt;div class="progress">
+  &lt;div class="progress-bar w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%&lt;/div>
+&lt;/div>
+&lt;div class="progress">
+  &lt;div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%&lt;/div>
+&lt;/div>
+&lt;div class="progress">
+  &lt;div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%&lt;/div>
+&lt;/div>
+&lt;div class="progress">
+  &lt;div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%&lt;/div>
+&lt;/div></code></pre>
+            </div>
+          </div>
+
+          <br>
+
+          <h4 class="mt-4">
+            Bar height
+          </h4>
+          <div class="panel">
+            <div class="panel-body">
+              <div class="progress mb-4">
+                <div class="progress-bar w-50" style="height: 1px;" role="progressbar" aria-valuenow="0" aria-valuemin="0" 
+aria-valuemax="100"></div>
+              </div>
+              <div class="progress mb-3">
+                <div class="progress-bar w-75" style="height: 15px;" role="progressbar" aria-valuenow="25" aria-valuemin="0" 
+aria-valuemax="100"></div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar w-100" style="height: 25px;" role="progressbar" aria-valuenow="50" aria-valuemin="0" 
+aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <pre>
+<code class="html">
+&lt;div class="progress">
+  &lt;div class="progress-bar w-50" style="height: 1px;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+&lt;/div>
+&lt;div class="progress">
+  &lt;div class="progress-bar w-75" style="height: 15px;" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+&lt;/div>
+&lt;div class="progress">
+  &lt;div class="progress-bar w-100" style="height: 25px;" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+&lt;/div></code></pre>
+            </div>
+          </div>
+
+          <br>
+
+          <h4 class="mt-4">
+            Backgrounds
+          </h4>
+          <div class="panel">
+            <div class="panel-body">
+              <div class="progress mb-2">
+                <div class="progress-bar bg-success w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+              </div>
+              <div class="progress mb-2">
+                <div class="progress-bar bg-info w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+              </div>
+              <div class="progress mb-2">
+                <div class="progress-bar bg-warning w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-danger w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" 
+aria-valuemax="100">100%</div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <pre>
+<code class="html">
+&lt;div class="progress">
+  &lt;div class="progress-bar bg-success w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%&lt;/div>
+&lt;/div>
+&lt;div class="progress">
+  &lt;div class="progress-bar bg-info w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%&lt;/div>
+&lt;/div>
+&lt;div class="progress">
+  &lt;div class="progress-bar bg-warning w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%&lt;/div>
+&lt;/div>
+&lt;div class="progress">
+  &lt;div class="progress-bar bg-danger w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%&lt;/div>
+&lt;/div></code></pre>
+            </div>
+          </div>
+
+          <br>
+
+          <h4 class="mt-4">
+            Animated bars
+          </h4>
+          <div class="panel">
+            <div class="panel-body">
+              <div class="progress mb-2">
+                <div class="progress-bar progress-bar-striped progress-bar-animated w-50" role="progressbar" aria-valuenow="50" 
+aria-valuemin="0" aria-valuemax="100">50%</div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info w-75" role="progressbar" aria-valuenow="75" 
+aria-valuemin="0" aria-valuemax="100">75%</div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <pre>
+<code class="html">
+&lt;div class="progress">
+  &lt;div class="progress-bar progress-bar-striped progress-bar-animated w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" 
+aria-valuemax="100">50%&lt;/div>
+&lt;/div>
+&lt;div class="progress">
+  &lt;div class="progress-bar progress-bar-striped progress-bar-animated bg-info w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" 
+aria-valuemax="100">75%&lt;/div>
+&lt;/div></code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <!-- @include('./sidebar.html', {"page": "icons"}) -->
+          <nav class="nav-sidebar">
+            <ul class="nav flex-column">
+              <li><a href="intro.html" class="nav-link">Intro</a></li>
+              <li><a href="alerts.html" class="nav-link">Alerts</a></li>
+              <li><a href="animations.html" class="nav-link">Animations</a></li>
+              <li><a href="badges.html" class="nav-link">Badges</a></li>
+              <li><a href="buttons.html" class="nav-link">Buttons</a></li>
+              <li><a href="button-groups.html" class="nav-link">Button groups</a></li>
+              <li><a href="cards.html" class="nav-link">Cards</a></li>
+              <li><a href="carousel.html" class="nav-link">Carousel</a></li>
+              <li><a href="accordion.html" class="nav-link">Accordion</a></li>
+              <li><a href="cta.html" class="nav-link">Call to actions</a></li>
+              <li><a href="dropdowns.html" class="nav-link">Dropdowns</a></li>
+              <li><a href="forms.html" class="nav-link">Forms</a></li>
+              <li><a href="grid-system.html" class="nav-link">Grid system</a></li>
+              <li><a href="input-groups.html" class="nav-link">Input groups</a></li>
+              <li><a href="icons.html" class="nav-link">Icons</a></li>
+              <li><a href="list-groups.html" class="nav-link">List groups</a></li>
+              <li><a href="modals.html" class="nav-link">Modals</a></li>
+              <li><a href="navs.html" class="nav-link">Navs</a></li>
+              <li><a href="navbars.html" class="nav-link">Navbars</a></li>
+              <li><a href="plugins.html" class="nav-link">Plugins</a></li>
+              <li><a href="progress.html" class="nav-link active">Progress bars</a></li>
+              <li><a href="stats-cards.html" class="nav-link">Stats cards</a></li>
+              <li><a href="tables.html" class="nav-link">Tables</a></li>
+              <li><a href="typography.html" class="nav-link">Typography</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $(function () {
+      // code highlighter
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    })
+  </script>
+</body>
+</html>
