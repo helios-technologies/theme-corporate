@@ -1,0 +1,738 @@
+${require('./../layouts/header.html')}
+  <div class="theme-docs-header">
+    <section class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10">
+          <h1>Tables</h1>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="theme-docs-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <h4 class="mt-4">
+            Basic example <small><code>.table</code></small>
+          </h4>
+          <div class="panel">
+            <div class="panel-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="panel-footer">
+              <pre>
+<code class="html">
+&lt;table class="table">
+  &lt;thead>
+    &lt;tr>
+      &lt;th>#&lt;/th>
+      &lt;th>First Name&lt;/th>
+      &lt;th>Last Name&lt;/th>
+      &lt;th>Username&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+    &lt;tr>
+      &lt;th scope="row">1&lt;/th>
+      &lt;td>Mark&lt;/td>
+      &lt;td>Otto&lt;/td>
+      &lt;td>@mdo&lt;/td>
+    &lt;/tr>
+  &lt;/tbody>
+&lt;/table></code></pre>
+            </div>
+          </div>
+
+          <br>
+
+          <h4 class="mt-4">
+            Table inverse <small><code>.table-inverse</code></small>
+          </h4>
+          <div class="panel">
+            <div class="panel-body">
+              <table class="table table-inverse">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="panel-footer">
+              <pre>
+<code class="html">
+&lt;table class="table table-inverse">
+  &lt;thead>
+    &lt;tr>
+      &lt;th>#&lt;/th>
+      &lt;th>First Name&lt;/th>
+      &lt;th>Last Name&lt;/th>
+      &lt;th>Username&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+    &lt;tr>
+      &lt;th scope="row">1&lt;/th>
+      &lt;td>Mark&lt;/td>
+      &lt;td>Otto&lt;/td>
+      &lt;td>@mdo&lt;/td>
+    &lt;/tr>
+  &lt;/tbody>
+&lt;/table></code></pre>
+            </div>
+          </div>
+
+          <br>
+
+          <h4 class="mt-4">
+            Table head options <small><code>thead.thead-inverse</code></small> & <small><code>thead.thead-default</code></small>
+          </h4>
+          <div class="panel">
+            <div class="panel-body">
+              <table class="table">
+                <thead class="thead-inverse">
+                  <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="table">
+                <thead class="thead-default">
+                  <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="panel-footer">
+              <pre>
+<code class="html">
+&lt;table class="table">
+  &lt;thead class="thead-inverse">
+    &lt;tr>
+      &lt;th>#&lt;/th>
+      &lt;th>First Name&lt;/th>
+      &lt;th>Last Name&lt;/th>
+      &lt;th>Username&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+    &lt;tr>
+      &lt;th scope="row">1&lt;/th>
+      &lt;td>Mark&lt;/td>
+      &lt;td>Otto&lt;/td>
+      &lt;td>@mdo&lt;/td>
+    &lt;/tr>
+  &lt;/tbody>
+&lt;/table>
+
+&lt;table class="table">
+  &lt;thead class="thead-default">
+    &lt;tr>
+      &lt;th>#&lt;/th>
+      &lt;th>First Name&lt;/th>
+      &lt;th>Last Name&lt;/th>
+      &lt;th>Username&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+    &lt;tr>
+      &lt;th scope="row">1&lt;/th>
+      &lt;td>Mark&lt;/td>
+      &lt;td>Otto&lt;/td>
+      &lt;td>@mdo&lt;/td>
+    &lt;/tr>
+  &lt;/tbody>
+&lt;/table></code></pre>
+            </div>
+          </div>
+
+          <br>
+
+          <h4 class="mt-4">
+            Striped rows <small><code>.table-striped</code></small>
+          </h4>
+          <div class="panel">
+            <div class="panel-body">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="panel-footer">
+              <pre>
+<code class="html">
+&lt;table class="table table-striped">
+  &lt;thead>
+    &lt;tr>
+      &lt;th>#&lt;/th>
+      &lt;th>First Name&lt;/th>
+      &lt;th>Last Name&lt;/th>
+      &lt;th>Username&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+    &lt;tr>
+      &lt;th scope="row">1&lt;/th>
+      &lt;td>Mark&lt;/td>
+      &lt;td>Otto&lt;/td>
+      &lt;td>@mdo&lt;/td>
+    &lt;/tr>
+  &lt;/tbody>
+&lt;/table></code></pre>
+            </div>
+          </div>
+
+          <br>
+
+          <h4 class="mt-4">
+            Bordered table <small><code>.table-bordered</code></small>
+          </h4>
+          <div class="panel">
+            <div class="panel-body">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="panel-footer">
+              <pre>
+<code class="html">
+&lt;table class="table table-bordered">
+  &lt;thead>
+    &lt;tr>
+      &lt;th>#&lt;/th>
+      &lt;th>First Name&lt;/th>
+      &lt;th>Last Name&lt;/th>
+      &lt;th>Username&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+    &lt;tr>
+      &lt;th scope="row">1&lt;/th>
+      &lt;td>Mark&lt;/td>
+      &lt;td>Otto&lt;/td>
+      &lt;td>@mdo&lt;/td>
+    &lt;/tr>
+  &lt;/tbody>
+&lt;/table></code></pre>
+            </div>
+          </div>
+
+          <br>
+
+          <h4 class="mt-4">
+            Hoverable rows <small><code>.table-hover</code></small>
+          </h4>
+          <div class="panel">
+            <div class="panel-body">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="panel-footer">
+              <pre>
+<code class="html">
+&lt;table class="table table-hover">
+  &lt;thead>
+    &lt;tr>
+      &lt;th>#&lt;/th>
+      &lt;th>First Name&lt;/th>
+      &lt;th>Last Name&lt;/th>
+      &lt;th>Username&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+    &lt;tr>
+      &lt;th scope="row">1&lt;/th>
+      &lt;td>Mark&lt;/td>
+      &lt;td>Otto&lt;/td>
+      &lt;td>@mdo&lt;/td>
+    &lt;/tr>
+  &lt;/tbody>
+&lt;/table></code></pre>
+            </div>
+          </div>
+
+          <br>
+
+          <h4 class="mt-4">
+            Small table <small><code>.table-sm</code></small>
+          </h4>
+          <div class="panel">
+            <div class="panel-body">
+              <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="panel-footer">
+              <pre>
+<code class="html">
+&lt;table class="table table-sm">
+  &lt;thead>
+    &lt;tr>
+      &lt;th>#&lt;/th>
+      &lt;th>First Name&lt;/th>
+      &lt;th>Last Name&lt;/th>
+      &lt;th>Username&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+    &lt;tr>
+      &lt;th scope="row">1&lt;/th>
+      &lt;td>Mark&lt;/td>
+      &lt;td>Otto&lt;/td>
+      &lt;td>@mdo&lt;/td>
+    &lt;/tr>
+  &lt;/tbody>
+&lt;/table></code></pre>
+            </div>
+          </div>
+
+          <br>
+
+          <h4 class="mt-4">
+            Responsive table <small><code>.table-responsive</code></small>
+          </h4>
+          <div class="panel">
+            <div class="panel-body">
+              <table class="table table-responsive">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                    <th># Orders</th>
+                    <th>Last seen</th>
+                    <th>City</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>3,120</td>
+                    <td>4 days ago</td>
+                    <td>New York</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>450</td>
+                    <td>1 week ago</td>
+                    <td>San Francisco</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>John</td>
+                    <td>Smith</td>
+                    <td>@john</td>
+                    <td>4,102</td>
+                    <td>2 hours ago</td>
+                    <td>Paris</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="panel-footer">
+              <pre>
+<code class="html">
+&lt;table class="table table-responsive">
+  &lt;thead>
+    &lt;tr>
+      &lt;th>#&lt;/th>
+      &lt;th>First Name&lt;/th>
+      &lt;th>Last Name&lt;/th>
+      &lt;th>Username&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+    &lt;tr>
+      &lt;th scope="row">1&lt;/th>
+      &lt;td>Mark&lt;/td>
+      &lt;td>Otto&lt;/td>
+      &lt;td>@mdo&lt;/td>
+    &lt;/tr>
+  &lt;/tbody>
+&lt;/table></code></pre>
+            </div>
+          </div>
+
+          <br>
+
+          <h4 class="mt-4">
+            Contextual classes
+          </h4>
+          <div class="panel">
+            <div class="panel-body">
+              <table class="table table-responsive">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                    <th># Orders</th>
+                    <th>Last seen</th>
+                    <th>City</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>3,120</td>
+                    <td>4 days ago</td>
+                    <td>New York</td>
+                  </tr>
+                  <tr class="table-success">
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>450</td>
+                    <td>1 week ago</td>
+                    <td>San Francisco</td>
+                  </tr>
+                  <tr class="table-info">
+                    <th scope="row">3</th>
+                    <td>John</td>
+                    <td>Smith</td>
+                    <td>@john</td>
+                    <td>4,102</td>
+                    <td>2 hours ago</td>
+                    <td>Paris</td>
+                  </tr>
+                  <tr class="table-warning">
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>3,120</td>
+                    <td>4 days ago</td>
+                    <td>New York</td>
+                  </tr>
+                  <tr class="table-danger">
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>450</td>
+                    <td>1 week ago</td>
+                    <td>San Francisco</td>
+                  </tr>
+                  <tr class="table-active">
+                    <th scope="row">3</th>
+                    <td>John</td>
+                    <td>Smith</td>
+                    <td>@john</td>
+                    <td>4,102</td>
+                    <td>2 hours ago</td>
+                    <td>Paris</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="panel-footer">
+              <pre>
+<code class="html">
+&lt;table class="table">
+  &lt;thead>
+    &lt;tr>
+      &lt;th>#&lt;/th>
+      &lt;th>First Name&lt;/th>
+      &lt;th>Last Name&lt;/th>
+      &lt;th>Username&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+    &lt;tr class="table-success">
+      &lt;th scope="row">1&lt;/th>
+      &lt;td>Mark&lt;/td>
+      &lt;td>Otto&lt;/td>
+      &lt;td>@mdo&lt;/td>
+    &lt;/tr>
+    &lt;tr class="table-info">
+      &lt;th scope="row">1&lt;/th>
+      &lt;td>Mark&lt;/td>
+      &lt;td>Otto&lt;/td>
+      &lt;td>@mdo&lt;/td>
+    &lt;/tr>
+    &lt;tr class="table-warning">
+      &lt;th scope="row">1&lt;/th>
+      &lt;td>Mark&lt;/td>
+      &lt;td>Otto&lt;/td>
+      &lt;td>@mdo&lt;/td>
+    &lt;/tr>
+    &lt;tr class="table-danger">
+      &lt;th scope="row">1&lt;/th>
+      &lt;td>Mark&lt;/td>
+      &lt;td>Otto&lt;/td>
+      &lt;td>@mdo&lt;/td>
+    &lt;/tr>
+    &lt;tr class="table-active">
+      &lt;th scope="row">1&lt;/th>
+      &lt;td>Mark&lt;/td>
+      &lt;td>Otto&lt;/td>
+      &lt;td>@mdo&lt;/td>
+    &lt;/tr>
+  &lt;/tbody>
+&lt;/table></code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <!-- @include('./sidebar.html', {"page": "icons"}) -->
+          <nav class="nav-sidebar">
+            <ul class="nav flex-column">
+              <li><a href="alerts.html" class="nav-link">Alerts</a></li>
+              <li><a href="animations.html" class="nav-link">Animations</a></li>
+              <li><a href="badges.html" class="nav-link">Badges</a></li>
+              <li><a href="buttons.html" class="nav-link">Buttons</a></li>
+              <li><a href="button-groups.html" class="nav-link">Button groups</a></li>
+              <li><a href="cards.html" class="nav-link">Cards</a></li>
+              <li><a href="carousel.html" class="nav-link">Carousel</a></li>
+              <li><a href="accordion.html" class="nav-link">Accordion</a></li>
+              <li><a href="cta.html" class="nav-link">Call to actions</a></li>
+              <li><a href="dropdowns.html" class="nav-link">Dropdowns</a></li>
+              <li><a href="forms.html" class="nav-link">Forms</a></li>
+              <li><a href="grid-system.html" class="nav-link">Grid system</a></li>
+              <li><a href="input-groups.html" class="nav-link">Input groups</a></li>
+              <li><a href="icons.html" class="nav-link">Icons</a></li>
+              <li><a href="list-groups.html" class="nav-link">List groups</a></li>
+              <li><a href="modals.html" class="nav-link">Modals</a></li>
+              <li><a href="navs.html" class="nav-link">Navs</a></li>
+              <li><a href="navbars.html" class="nav-link">Navbars</a></li>
+              <li><a href="plugins.html" class="nav-link">Plugins</a></li>
+              <li><a href="progress.html" class="nav-link">Progress bars</a></li>
+              <li><a href="stats-cards.html" class="nav-link">Stats cards</a></li>
+              <li><a href="tables.html" class="nav-link active">Tables</a></li>
+              <li><a href="typography.html" class="nav-link">Typography</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $(function () {
+      // code highlighter
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    })
+  </script>
+</body>
+</html>
