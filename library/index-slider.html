@@ -377,4 +377,30 @@ ${require('./layouts/header-light.html')}
   </section>
 </div>
 
-${require('./layouts/footer.html')}
+<div class="call-to-action-signup">
+    <div class="container">
+      <h3>
+        Try it free for 30 days
+      </h3>
+      <form class="form-inline justify-content-center">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Your name" />
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="Your email address" />
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" placeholder="Your password" />
+        </div>
+
+        <button class="btn-shadow btn-shadow-primary" type="submit">
+          Create account
+        </button>
+
+        <div class="agree w-100">By signing up you agree to our <a href="#">Terms</a>.</div>
+      </form>
+    </div>
+  </div>
+
+
+${require('./layouts/footer-dark.html')}
