@@ -1,0 +1,385 @@
+${require('./../layouts/header.html')}
+  <div class="theme-docs-header">
+    <section class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10">
+          <h1>Navs</h1>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="theme-docs-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <p class="lead mt-4">
+            New fully responsive sidebar icon nav built on top of a simple <small><code>.nav</code></small> component.
+          </p>
+
+          <h5 class="mt-4">
+            Icon navbar inverse <small><code>.iconav-inverse</code></small>
+          </h5>
+
+          <div class="panel">
+            <div class="panel-body">
+              <nav class="iconav iconav-inverse" style="position: relative;">
+                <a class="iconav-brand" href="#">
+                  <i class="fa fa-cube"></i>
+                </a>
+                <div class="nav-slider">
+                  <ul class="nav iconav-nav flex-md-column">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" title="Dashboard" data-toggle="tooltip" data-placement="right" data-container="body">
+                        <i class="fa fa-home"></i>
+                        <span class="nav-link-label d-md-none">Dashboard</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" title="Statistics" data-toggle="tooltip" data-placement="right" data-container="body">
+                        <i class="fa fa-bar-chart"></i>
+                        <span class="nav-link-label d-md-none">Statistics</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#" title="World map" data-toggle="tooltip" data-placement="right" data-container="body">
+                        <i class="fa fa-map"></i>
+                        <span class="nav-link-label d-md-none">World map</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" title="Metrics" data-toggle="tooltip" data-placement="right" data-container="body">
+                        <i class="fa fa-pie-chart"></i>
+                        <span class="nav-link-label d-md-none">Metrics</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" title="Edit theme" data-toggle="tooltip" data-placement="right" data-container="body">
+                        <i class="fa fa-code"></i>
+                        <span class="nav-link-label d-md-none">Edit theme</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" title="Settings" data-toggle="tooltip" data-placement="right" data-container="body">
+                        <i class="fa fa-gear"></i>
+                        <span class="nav-link-label d-md-none">Settings</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" title="Support" data-toggle="tooltip" data-placement="right" data-container="body">
+                        <i class="fa fa-life-buoy"></i>
+                        <span class="nav-link-label d-md-none">Support</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" title="Sign out" data-toggle="tooltip" data-placement="right" data-container="body">
+                        <i class="fa fa-power-off"></i>
+                        <span class="nav-link-label d-md-none">Sign out</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+
+            </div>
+            <div class="panel-footer">
+              <pre>
+<code class="html">
+&lt;nav class="iconav iconav-inverse">
+  &lt;a class="iconav-brand" href="#">
+    &lt;i class="ion-cube">&lt;/i>
+  &lt;/a>
+  &lt;div class="nav-slider">
+    &lt;ul class="nav iconav-nav flex-md-column">
+      &lt;li class="nav-item">
+        &lt;a class="nav-link" href="#" title="Dashboard" data-toggle="tooltip" data-placement="right" data-container="body">
+          &lt;i class="ion-home">&lt;/i>
+          &lt;span class="nav-link-label d-md-none">Dashboard&lt;/span>
+        &lt;/a>
+      &lt;/li>
+      &lt;li class="nav-item">
+        &lt;a class="nav-link" href="#" title="Statistics" data-toggle="tooltip" data-placement="right" data-container="body">
+          &lt;i class="ion-stats-bars">&lt;/i>
+          &lt;span class="nav-link-label d-md-none">Statistics&lt;/span>
+        &lt;/a>
+      &lt;/li>
+      &lt;li class="nav-item">
+        &lt;a class="nav-link active" href="#" title="World map" data-toggle="tooltip" data-placement="right" data-container="body">
+          &lt;i class="ion-map">&lt;/i>
+          &lt;span class="nav-link-label d-md-none">World map&lt;/span>
+        &lt;/a>
+      &lt;/li>
+      &lt;li class="nav-item">
+        &lt;a class="nav-link" href="#" title="Metrics" data-toggle="tooltip" data-placement="right" data-container="body">
+          &lt;i class="ion-pie-graph">&lt;/i>
+          &lt;span class="nav-link-label d-md-none">Metrics&lt;/span>
+        &lt;/a>
+      &lt;/li>
+      &lt;li class="nav-item">
+        &lt;a class="nav-link" href="#" title="Edit theme" data-toggle="tooltip" data-placement="right" data-container="body">
+          &lt;i class="ion-code">&lt;/i>
+          &lt;span class="nav-link-label d-md-none">Edit theme&lt;/span>
+        &lt;/a>
+      &lt;/li>
+      &lt;li class="nav-item">
+        &lt;a class="nav-link" href="#" title="Settings" data-toggle="tooltip" data-placement="right" data-container="body">
+          &lt;i class="ion-gear-a">&lt;/i>
+          &lt;span class="nav-link-label d-md-none">Settings&lt;/span>
+        &lt;/a>
+      &lt;/li>
+      &lt;li class="nav-item">
+        &lt;a class="nav-link" href="#" title="Support" data-toggle="tooltip" data-placement="right" data-container="body">
+          &lt;i class="ion-help-buoy">&lt;/i>
+          &lt;span class="nav-link-label d-md-none">Support&lt;/span>
+        &lt;/a>
+      &lt;/li>
+      &lt;li class="nav-item">
+        &lt;a class="nav-link" href="#" title="Sign out" data-toggle="tooltip" data-placement="right" data-container="body">
+          &lt;i class="ion-power">&lt;/i>
+          &lt;span class="nav-link-label d-md-none">Sign out&lt;/span>
+        &lt;/a>
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/nav></code></pre>
+            </div>
+          </div>
+
+          <br>
+
+          <h5 class="mt-4">
+            Icon navbar default <small><code>.iconav</code></small>
+          </h5>
+
+          <div class="panel">
+            <div class="panel-body">
+              
+              <nav class="iconav" style="position: relative;">
+                <a class="iconav-brand" href="#">
+                  <i class="fa fa-cube"></i>
+                </a>
+                <div class="nav-slider">
+                  <ul class="nav iconav-nav flex-md-column">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" title="Dashboard" data-toggle="tooltip" data-placement="right" data-container="body">
+                        <i class="fa fa-home"></i>
+                        <span class="nav-link-label d-md-none">Dashboard</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" title="Statistics" data-toggle="tooltip" data-placement="right" data-container="body">
+                        <i class="fa fa-bar-chart"></i>
+                        <span class="nav-link-label d-md-none">Statistics</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#" title="World map" data-toggle="tooltip" data-placement="right" data-container="body">
+                        <i class="fa fa-map"></i>
+                        <span class="nav-link-label d-md-none">World map</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" title="Metrics" data-toggle="tooltip" data-placement="right" data-container="body">
+                        <i class="fa fa-pie-chart"></i>
+                        <span class="nav-link-label d-md-none">Metrics</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" title="Edit theme" data-toggle="tooltip" data-placement="right" data-container="body">
+                        <i class="fa fa-code"></i>
+                        <span class="nav-link-label d-md-none">Edit theme</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" title="Settings" data-toggle="tooltip" data-placement="right" data-container="body">
+                        <i class="fa fa-gear"></i>
+                        <span class="nav-link-label d-md-none">Settings</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" title="Support" data-toggle="tooltip" data-placement="right" data-container="body">
+                        <i class="fa fa-life-buoy"></i>
+                        <span class="nav-link-label d-md-none">Support</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" title="Sign out" data-toggle="tooltip" data-placement="right" data-container="body">
+                        <i class="fa fa-power-off"></i>
+                        <span class="nav-link-label d-md-none">Sign out</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+
+            </div>
+            <div class="panel-footer">
+              <pre>
+<code class="html">
+&lt;nav class="iconav">
+  &lt;a class="iconav-brand" href="#">
+    &lt;i class="ion-cube">&lt;/i>
+  &lt;/a>
+  &lt;div class="nav-slider">
+    &lt;ul class="nav iconav-nav flex-md-column">
+      &lt;li class="nav-item">
+        &lt;a class="nav-link" href="#" title="Dashboard" data-toggle="tooltip" data-placement="right" data-container="body">
+          &lt;i class="ion-home">&lt;/i>
+          &lt;span class="nav-link-label d-md-none">Dashboard&lt;/span>
+        &lt;/a>
+      &lt;/li>
+      &lt;li class="nav-item">
+        &lt;a class="nav-link" href="#" title="Statistics" data-toggle="tooltip" data-placement="right" data-container="body">
+          &lt;i class="ion-stats-bars">&lt;/i>
+          &lt;span class="nav-link-label d-md-none">Statistics&lt;/span>
+        &lt;/a>
+      &lt;/li>
+      ...
+    &lt;/ul>
+  &lt;/div>
+&lt;/nav></code></pre>
+            </div>
+          </div>
+
+          <br>
+
+          <h5 class="mt-4">
+            Nav bordered <small><code>.nav-bordered</code></small>
+          </h5>
+
+          <div class="panel">
+            <div class="panel-body">
+              
+              <ul class="nav nav-bordered">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Settings</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Account</a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="panel-footer">
+              <pre>
+<code class="html">
+&lt;ul class="nav nav-bordered">
+  &lt;li class="nav-item">
+    &lt;a class="nav-link active" href="#">Dashboard&lt;/a>
+  &lt;/li>
+  &lt;li class="nav-item">
+    &lt;a class="nav-link" href="#">Pricing&lt;/a>
+  &lt;/li>
+  &lt;li class="nav-item">
+    &lt;a class="nav-link" href="#">Settings&lt;/a>
+  &lt;/li>
+  &lt;li class="nav-item">
+    &lt;a class="nav-link" href="#">Account&lt;/a>
+  &lt;/li>
+&lt;/ul></code></pre>
+            </div>
+          </div>
+
+          <h5 class="mt-4 pt-3">
+            Nav bordered vertical
+          </h5>
+
+          <div class="panel">
+            <div class="panel-body">
+              
+              <ul class="nav nav-bordered nav-vertical flex-column">
+                <li class="nav-header">Examples</li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Settings</a>
+                </li>
+                <li class="nav-header">Admin</li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Account</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Log out</a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="panel-footer">
+              <pre>
+<code class="html">
+&lt;ul class="nav nav-bordered nav-vertical flex-md-column">
+  &lt;li class="nav-header">Examples&lt;/li>
+  &lt;li class="nav-item">
+    &lt;a class="nav-link active" href="#">Dashboard&lt;/a>
+  &lt;/li>
+  &lt;li class="nav-item">
+    &lt;a class="nav-link" href="#">Pricing&lt;/a>
+  &lt;/li>
+  &lt;li class="nav-item">
+    &lt;a class="nav-link" href="#">Settings&lt;/a>
+  &lt;/li>
+  &lt;li class="nav-header">Admin&lt;/li>
+  &lt;li class="nav-item">
+    &lt;a class="nav-link" href="#">Account&lt;/a>
+  &lt;/li>
+&lt;/ul></code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <!-- @include('./sidebar.html', {"page": "icons"}) -->
+          <nav class="nav-sidebar">
+            <ul class="nav flex-column">
+              <li><a href="alerts.html" class="nav-link">Alerts</a></li>
+              <li><a href="animations.html" class="nav-link">Animations</a></li>
+              <li><a href="badges.html" class="nav-link">Badges</a></li>
+              <li><a href="buttons.html" class="nav-link">Buttons</a></li>
+              <li><a href="button-groups.html" class="nav-link">Button groups</a></li>
+              <li><a href="cards.html" class="nav-link">Cards</a></li>
+              <li><a href="carousel.html" class="nav-link">Carousel</a></li>
+              <li><a href="accordion.html" class="nav-link">Accordion</a></li>
+              <li><a href="cta.html" class="nav-link">Call to actions</a></li>
+              <li><a href="dropdowns.html" class="nav-link">Dropdowns</a></li>
+              <li><a href="forms.html" class="nav-link">Forms</a></li>
+              <li><a href="grid-system.html" class="nav-link">Grid system</a></li>
+              <li><a href="input-groups.html" class="nav-link">Input groups</a></li>
+              <li><a href="icons.html" class="nav-link">Icons</a></li>
+              <li><a href="list-groups.html" class="nav-link">List groups</a></li>
+              <li><a href="modals.html" class="nav-link">Modals</a></li>
+              <li><a href="navs.html" class="nav-link active">Navs</a></li>
+              <li><a href="navbars.html" class="nav-link">Navbars</a></li>
+              <li><a href="plugins.html" class="nav-link">Plugins</a></li>
+              <li><a href="progress.html" class="nav-link">Progress bars</a></li>
+              <li><a href="stats-cards.html" class="nav-link">Stats cards</a></li>
+              <li><a href="tables.html" class="nav-link">Tables</a></li>
+              <li><a href="typography.html" class="nav-link">Typography</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $(function () {
+      // code highlighter
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+</body>
+</html>
