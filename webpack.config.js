@@ -90,12 +90,19 @@ glob.sync('library/*.html').forEach((page) => {
 glob.sync('library/docs/*.html').forEach((page) => {
   config.plugins.push(
     new HtmlWebpackPlugin({
-      filename: path.basename(page),
+      filename: path.join('docs', path.basename(page)),
       template: page
     })
   )
 });
 
-
+glob.sync('library/ecommerce/*.html').forEach((page) => {
+  config.plugins.push(
+    new HtmlWebpackPlugin({
+      filename: path.join('ecommerce', path.basename(page)),
+      template: page
+    })
+  )
+});
 
 module.exports = config;

@@ -93,3 +93,22 @@ $ionicons-font-path: "~ionicons/dist/fonts";
 @import "custom/modules/_custom_effects";
 @import "custom/modules/_mixins";
 
+/* ecommerce layout */
+@import "custom/ecommerce/layout";
+
+/* ecommerce modules */
+@import "custom/ecommerce/modules/elements";
+
+/* ecommerce */
+@import "custom/ecommerce/pages/index";
+@import "custom/ecommerce/pages/collection";
+@import "custom/ecommerce/pages/collection_sidebar";
+@import "custom/ecommerce/pages/product";
+@import "custom/ecommerce/pages/search";
+@import "custom/ecommerce/pages/cart";
+@import "custom/ecommerce/pages/checkout";
+@import "custom/ecommerce/pages/account_orders";
+@import "custom/ecommerce/pages/account_invoice";
+@import "custom/ecommerce/pages/account_wishlist";
+@import "custom/ecommerce/pages/account_profile";
+@import "custom/ecommerce/pages/sign_up";
