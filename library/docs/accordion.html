@@ -1,0 +1,208 @@
+${require('./../layouts/header.html')}
+
+  <div class="theme-docs-header">
+    <section class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10">
+          <h1>Accordions</h1>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="theme-docs-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <p class="lead mt-4">
+            By using the <small><code>collapse</code></small> plugin of Bootstrap 4 you can enable accordion-like functionality with complete freedom on the visuals.
+          </p>
+          <p>
+            You can use a link with the <code>href</code> attribute, or a button with the <code>data-target</code> attribute. In both cases, the <code>data-toggle="collapse"</code> is required.
+          </p>
+
+          <div class="panel">
+            <div class="panel-body">
+              <p>
+                <a class="btn btn-primary mr-2" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  Link with href
+                </a>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  Button with data-target
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <pre>
+<code class="html">
+&lt;p&gt;
+  &lt;a class="btn btn-primary" data-toggle="collapse" href="#collapseExample"&gt;
+    Link with href
+  &lt;/a&gt;
+  &lt;button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"&gt;
+    Button with data-target
+  &lt;/button&gt;
+&lt;/p&gt;
+&lt;div class="collapse" id="collapseExample"&gt;
+  &lt;div class="card card-body"&gt;
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+          <br>
+
+          <h4 class="mt-4">
+            Accordion example
+          </h4>
+
+          <div class="panel">
+            <div class="panel-body">
+              <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h6 class="mb-0">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                        Collapsible Group Item #1
+                      </a>
+                    </h6>
+                  </div>
+
+                  <div id="collapseOne" class="collapse show" role="tabpanel">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h6 class="mb-0">
+                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                        Collapsible Group Item #2
+                      </a>
+                    </h6>
+                  </div>
+                  <div id="collapseTwo" class="collapse">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h6 class="mb-0">
+                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                        Collapsible Group Item #3
+                      </a>
+                    </h6>
+                  </div>
+                  <div id="collapseThree" class="collapse">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <pre>
+<code class="html">
+&lt;div id="accordion"&gt;
+  &lt;div class="card"&gt;
+    &lt;div class="card-header" id="headingOne"&gt;
+      &lt;h5 class="mb-0"&gt;
+        &lt;a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"&gt;
+          Collapsible Group Item #1
+        &lt;/a&gt;
+      &lt;/h5&gt;
+    &lt;/div&gt;
+
+    &lt;div id="collapseOne" class="collapse show" role="tabpanel"&gt;
+      &lt;div class="card-body"&gt;
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="card"&gt;
+    &lt;div class="card-header" id="headingTwo"&gt;
+      &lt;h5 class="mb-0"&gt;
+        &lt;a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"&gt;
+          Collapsible Group Item #2
+        &lt;/a&gt;
+      &lt;/h5&gt;
+    &lt;/div&gt;
+    &lt;div id="collapseTwo" class="collapse"&gt;
+      &lt;div class="card-body"&gt;
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="card"&gt;
+    &lt;div class="card-header" id="headingThree"&gt;
+      &lt;h5 class="mb-0"&gt;
+        &lt;a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"&gt;
+          Collapsible Group Item #3
+        &lt;/a&gt;
+      &lt;/h5&gt;
+    &lt;/div&gt;
+    &lt;div id="collapseThree" class="collapse"&gt;
+      &lt;div class="card-body"&gt;
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <!-- @include('./sidebar.html', {"page": "icons"}) -->
+          <nav class="nav-sidebar">
+            <ul class="nav flex-column">
+              <li><a href="intro.html" class="nav-link">Intro</a></li>
+              <li><a href="alerts.html" class="nav-link">Alerts</a></li>
+              <li><a href="animations.html" class="nav-link">Animations</a></li>
+              <li><a href="badges.html" class="nav-link">Badges</a></li>
+              <li><a href="buttons.html" class="nav-link">Buttons</a></li>
+              <li><a href="button-groups.html" class="nav-link">Button groups</a></li>
+              <li><a href="cards.html" class="nav-link">Cards</a></li>
+              <li><a href="carousel.html" class="nav-link">Carousel</a></li>
+              <li><a href="accordion.html" class="nav-link active">Accordion</a></li>
+              <li><a href="cta.html" class="nav-link">Call to actions</a></li>
+              <li><a href="dropdowns.html" class="nav-link">Dropdowns</a></li>
+              <li><a href="forms.html" class="nav-link">Forms</a></li>
+              <li><a href="grid-system.html" class="nav-link">Grid system</a></li>
+              <li><a href="input-groups.html" class="nav-link">Input groups</a></li>
+              <li><a href="icons.html" class="nav-link">Icons</a></li>
+              <li><a href="list-groups.html" class="nav-link">List groups</a></li>
+              <li><a href="modals.html" class="nav-link">Modals</a></li>
+              <li><a href="navs.html" class="nav-link">Navs</a></li>
+              <li><a href="navbars.html" class="nav-link">Navbars</a></li>
+              <li><a href="plugins.html" class="nav-link">Plugins</a></li>
+              <li><a href="progress.html" class="nav-link">Progress bars</a></li>
+              <li><a href="stats-cards.html" class="nav-link">Stats cards</a></li>
+              <li><a href="tables.html" class="nav-link">Tables</a></li>
+              <li><a href="typography.html" class="nav-link">Typography</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $(function () {
+      // code highlighter
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    })
+  </script>
+</body>
+</html>
