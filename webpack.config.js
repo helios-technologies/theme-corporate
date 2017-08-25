@@ -105,4 +105,13 @@ glob.sync('library/ecommerce/*.html').forEach((page) => {
   )
 });
 
+glob.sync('library/blog/*.html').forEach((page) => {
+  config.plugins.push(
+    new HtmlWebpackPlugin({
+      filename: path.basename(page),
+      template: page
+    })
+  )
+});
+
 module.exports = config;
