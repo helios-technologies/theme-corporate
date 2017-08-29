@@ -71,8 +71,9 @@ const config = {
   plugins: [
     new ExtractTextPlugin('theme.css'),
     new webpack.ProvidePlugin({
-      jQuery: 'jquery',
       $: 'jquery',
+      jQuery: 'jquery',
+      "window.jQuery": "jquery",
       Tether: 'tether'
     }),
   ]
@@ -82,7 +83,8 @@ glob.sync('library/*.html').forEach((page) => {
   config.plugins.push(
     new HtmlWebpackPlugin({
       filename: path.basename(page),
-      template: page
+      template: page,
+      inject: 'head'
     })
   )
 });

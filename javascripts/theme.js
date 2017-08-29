@@ -6,6 +6,9 @@ import 'bootstrap';
 import '../stylesheets/theme.scss';
 import './custom/slider.js';
 
+window.jQuery = $;
+window.$ = $;
+
 $(document).ready = function () {
   window.$ = $;
 
