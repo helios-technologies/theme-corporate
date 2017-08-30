@@ -1,6 +1,4 @@
 import hljs from 'highlight.js'
-import $ from 'jquery';
-import 'tether';
 
 import 'bootstrap';
 
