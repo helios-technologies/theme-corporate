@@ -1,3 +1,4 @@
+import hljs from 'highlight.js'
 import $ from 'jquery';
 import 'tether';
 
@@ -6,6 +7,7 @@ import 'bootstrap';
 import '../stylesheets/theme.scss';
 import './custom/slider.js';
 
+window.hljs = hljs;
 window.jQuery = $;
 window.$ = $;
 

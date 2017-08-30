@@ -93,7 +93,8 @@ glob.sync('library/docs/*.html').forEach((page) => {
   config.plugins.push(
     new HtmlWebpackPlugin({
       filename: path.join('docs', path.basename(page)),
-      template: page
+      template: page,
+      inject: 'head'
     })
   )
 });
@@ -102,7 +103,8 @@ glob.sync('library/ecommerce/*.html').forEach((page) => {
   config.plugins.push(
     new HtmlWebpackPlugin({
       filename: path.join('ecommerce', path.basename(page)),
-      template: page
+      template: page,
+      inject: 'head'
     })
   )
 });
@@ -111,7 +113,8 @@ glob.sync('library/blog/*.html').forEach((page) => {
   config.plugins.push(
     new HtmlWebpackPlugin({
       filename: path.basename(page),
-      template: page
+      template: page,
+      inject: 'head'
     })
   )
 });
