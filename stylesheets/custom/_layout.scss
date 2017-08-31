@@ -239,20 +239,48 @@ body {
 
 /* off-canvas navigation */
 .off-wrapper {
+
   position: relative;
   overflow: hidden;
 
   &.active {
+    &.off-wrapper-left {
+      .off-wrapper-content {
+        @include transform(translate3d(290px, 0, 0));
+      }
+    }
+
+    &.off-wrapper-right {
+      .off-wrapper-content {
+        @include transform(translate3d(-290px, 0, 0));
+      }
+    }
+
     .off-wrapper-content {
       box-shadow: 5px 0px 20px 0px rgba(0, 0, 0, 0.3);
-
-      @include transform(translate3d(-290px, 0, 0));
     }
 
     .off-wrapper-menu {
-      @include transform(translate3d(0, 0, 0));
+      @include transform(translate3d(0, 0, 0) !important);
     }
   }
+
+  &.off-wrapper-left {
+    .off-wrapper-menu {
+      left: 0;
+
+    @include transform(translate3d(-50%, 0, 0));
+    }
+  }
+
+  &.off-wrapper-right {
+    .off-wrapper-menu {
+      right: 0;
+
+      @include transform(translate3d(50%, 0, 0));
+    }
+  }
+
 
   .off-wrapper-content {
     position: relative;
