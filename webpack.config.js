@@ -14,10 +14,19 @@ var plugins = [
     jQuery: 'jquery',
     'window.jQuery': 'jquery',
     Tether: 'tether',
-    bootstrap: 'bootstrap'
   }),
   new webpack.optimize.CommonsChunkPlugin({name: 'vendor', filename: 'vendor.bundle.js'})
 ]
+
+var modernizrOptions = {
+  options: [
+    "prefixed"
+  ],
+  "feature-detects": [
+    "test/es6/promises",
+    "test/serviceworker"
+  ]
+}
 
 glob.sync('library/{,ecommerce/,docs/,blog/}*.html').forEach((page) => {
   var pageName = path.basename(page).replace('.html', '')
@@ -81,7 +90,19 @@ module.exports = {
       test: /\.(woff2?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
       loader: 'url-loader?limit=10000',
       options: { name: 'fonts/[name].[hash].[ext]' }
+    },
+    {
+      test: /empty_modernizr\.js$/,
+      loader: "webpack-modernizr-loader",
+      options: modernizrOptions
     }]
   },
+  resolve: {
+    alias: {
+      modernizr$: path.resolve(__dirname,
+        "./javascripts/custom/empty_modernizr.js")
+    }
+  },
   plugins: plugins
+
 }

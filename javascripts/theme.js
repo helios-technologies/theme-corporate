@@ -1,13 +1,15 @@
 import hljs from 'highlight.js'
 
+import Modernizr from 'modernizr';
+
 import 'bootstrap';
 
 import '../stylesheets/theme.scss';
 import './custom/slider.js';
 
+window.Modernizr = Modernizr;
 window.hljs = hljs;
-window.jQuery = $;
-window.$ = $;
+window.jQuery = window.$ = $;
 
 $(document).ready = function () {
   window.$ = $;
@@ -171,7 +173,7 @@ var navbar = {
           $navbar.addClass('bg-transparent')
         }
       }
-      
+
       $(window).scroll(scrollingFn)
     }
   },
@@ -192,7 +194,7 @@ var navbar = {
         }
       }
     }
-    
+
     $(window).scroll(scrollingFn)
   }
 };

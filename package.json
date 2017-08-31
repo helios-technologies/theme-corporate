@@ -36,10 +36,10 @@
     "jquery": "^3.2.1",
     "magnific-popup": "^1.1.0",
     "masonry": "^0.0.2",
-    "modernizr": "^3.5.0",
     "pikaday": "^1.6.1",
     "skrollr": "^0.6.26",
     "tether": "^1.2.4",
+    "webpack-modernizr-loader": "^4.0.0",
     "zoomerang": "^0.1.9"
   }
 }

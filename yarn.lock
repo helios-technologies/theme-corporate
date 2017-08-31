@@ -2708,7 +2708,7 @@ loader-utils@^0.2.14, loader-utils@^0.2.16:
     json5 "^0.5.0"
     object-assign "^4.0.1"
 
-loader-utils@^1.0.1, loader-utils@^1.0.2, loader-utils@^1.1.0:
+loader-utils@^1.0.0, loader-utils@^1.0.1, loader-utils@^1.0.2, loader-utils@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-1.1.0.tgz#c98aef488bcceda2ffb5e2de646d6a754429f5cd"
   dependencies:
@@ -3044,7 +3044,7 @@ mkdirp@0.5.1, mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdi
   dependencies:
     minimist "0.0.8"
 
-modernizr@^3.5.0:
+modernizr@^3.1.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/modernizr/-/modernizr-3.5.0.tgz#396a02231bdc54628bbde2c0813a8e884c7e8060"
   dependencies:
@@ -5059,6 +5059,13 @@ webpack-dev-server@^2.7.1:
     supports-color "^3.1.1"
     webpack-dev-middleware "^1.11.0"
     yargs "^6.0.0"
+
+webpack-modernizr-loader@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/webpack-modernizr-loader/-/webpack-modernizr-loader-4.0.0.tgz#44858272400a2ea2d2f9a75c76613462a62189b3"
+  dependencies:
+    loader-utils "^1.0.0"
+    modernizr "^3.1.0"
 
 webpack-sources@^1.0.1:
   version "1.0.1"
