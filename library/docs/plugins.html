@@ -17,13 +17,13 @@ ${require('./../layouts/header.html')}
             Zoomerang
           </h4>
           <p class="mt-4">
-            This zoom plugin made by <a href="https://github.com/yyx990803/zoomerang" target="_blank">yyx990803</a> provides image zoom 
+            This zoom plugin made by <a href="https://github.com/yyx990803/zoomerang" target="_blank">yyx990803</a> provides image zoom
 functionality. Add a <code>data-trigger="zoomerang"</code> attribute to any image you want to make zoomable.
           </p>
 
           <div class="panel">
             <div class="panel-body">
-              <img src="/images/unsplash/photo-1442965416224-f6a7eca980fa.jpg" style="width: 250px;" data-trigger="zoomerang">
+              <img src="../../images/unsplash/photo-1442965416224-f6a7eca980fa.jpg" style="width: 250px;" data-trigger="zoomerang">
             </div>
             <div class="panel-footer">
               <pre>
@@ -38,7 +38,7 @@ functionality. Add a <code>data-trigger="zoomerang"</code> attribute to any imag
             Smooth page scrolling
           </h4>
           <p class="mt-4">
-            The smooth scrolling feature is a nice way to let your users navigate your content while keeping track of where they are on the 
+            The smooth scrolling feature is a nice way to let your users navigate your content while keeping track of where they are on the
 page.
           </p>
           <p>
@@ -56,14 +56,14 @@ page.
           <pre>
 <code class="html" style="line-height: 10px;">
 &lt;div id="intro""&gt;...&lt;/div&gt;</code></pre>
-          
+
           <br>
 
           <h4 class="mt-3" id="slider">
             Slider
           </h4>
           <p class="mt-4">
-            This plugin made by <a href="https://tympanus.net/codrops/2014/03/18/inspiration-for-item-transitions/" target="_blank">Codrops</a> 
+            This plugin made by <a href="https://tympanus.net/codrops/2014/03/18/inspiration-for-item-transitions/" target="_blank">Codrops</a>
 enables a slider functionality with 14 different effects.
           </p>
           <p>
@@ -91,22 +91,22 @@ enables a slider functionality with 14 different effects.
               <div id="spacial-slider" class="slider-component fxSideSwing">
                 <ul class="itemwrap">
                   <li class="current">
-                    <div class="pic" style="background-image: url('../images/unsplash/photo-1442965416224-f6a7eca980fa.jpg');">
+                    <div class="pic" style="background-image: url(${require('../../images/unsplash/photo-1442965416224-f6a7eca980fa.jpg')});">
                     </div>
                     <h3>Slide 1 content</h3>
                   </li>
                   <li>
-                    <div class="pic" style="background-image: url('../images/unsplash/photo-1470707592630-d4784581f809.jpg');">
+                    <div class="pic" style="background-image: url(${require('../../images/unsplash/photo-1470707592630-d4784581f809.jpg')});">
                     </div>
                     <h3>Slide 2 content</h3>
                   </li>
                   <li>
-                    <div class="pic" style="background-image: url('../images/unsplash/photo-1422665717225-1a37f226c92a.jpg');">
+                    <div class="pic" style="background-image: url(${require('../../images/unsplash/photo-1422665717225-1a37f226c92a.jpg')});">
                     </div>
                     <h3>Slide 3 content</h3>
                   </li>
                   <li>
-                    <div class="pic" style="background-image: url('../images/unsplash/photo-1454942901704-3c44c11b2ad1.jpg');">
+                    <div class="pic" style="background-image: url(${require('../../images/unsplash/photo-1454942901704-3c44c11b2ad1.jpg')});">
                     </div>
                     <h3>Slide 4 content</h3>
                   </li>
@@ -206,8 +206,7 @@ enables a slider functionality with 14 different effects.
         $options_slider_effect.removeClass('active');
         $(this).addClass('active');
 
-        $slider.removeClass("fxSideSwing fxSoftScale fxPressAway fxPushReveal fxVGrowth fxArchiveMe fxLetMeIn fxFortuneWheel fxSwipe fxSnapIn 
-fxStickIt fxSlideBehind fxSoftPulse fxCliffDiving")
+        $slider.removeClass("fxSideSwing fxSoftScale fxPressAway fxPushReveal fxVGrowth fxArchiveMe fxLetMeIn fxFortuneWheel fxSwipe fxSnapIn fxStickIt fxSlideBehind fxSoftPulse fxCliffDiving")
         .addClass($(this).data("class"));
 
         window.navigate_slider("next");

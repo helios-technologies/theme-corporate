@@ -571,6 +571,13 @@ optimized for mobile devices too :D
       </div>
     </div>
   </div>
-
+  <script type="text/javascript">
+  $(function () {
+    // code highlighter
+    $('pre code').each(function(i, block) {
+      hljs.highlightBlock(block);
+    });
+  })
+ </script>
 </body>
 </html>
