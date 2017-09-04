@@ -1,9 +1,9 @@
 {
-  "name": "theme-core",
-  "version": "1.0.0",
+  "name": "theme-corporate",
+  "version": "1.1.0",
   "description": "Helios base theme",
   "main": "index.js",
-  "repository": "https://github.com/helios-technologies/theme-core",
+  "repository": "https://github.com/helios-technologies/theme-corporate",
   "author": "Helios",
   "license": "MIT",
   "scripts": {
