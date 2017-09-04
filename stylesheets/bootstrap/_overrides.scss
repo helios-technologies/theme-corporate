@@ -13,12 +13,12 @@ a {
 .container {
   &:not(.no-override) {
     @media (min-width: 1200px) {
-      width: 1070px;
+      max-width: 1070px;
     }
   }
 
   @media(max-width: 575px) {
-    width: 100%;
+    position: relative;
   }
 }
 
