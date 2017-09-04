@@ -89,9 +89,9 @@ body {
   }
 }
 
-/* navbar inverse (dark) */
-.navbar-inverse {
-  background-color: #282F37;
+/* navbar dark */
+.navbar-dark {
+  background-color: #282F37 !important;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 
   @include transition(all .4s);
@@ -103,10 +103,11 @@ body {
   .navbar-brand {
     font-size: 21px;
     letter-spacing: .5px;
+    color: #fff;
 
     @include transition(color .2s linear);
   }
-  
+
   .dropdown-menu {
     @media(min-width: 992px) {
       border-color: #fbfbfb;
@@ -189,8 +190,8 @@ body {
   }
 }
 
-/* extra bg-transparent utility for navbar inverse and light */
-.bg-transparent {
+/* extra bg-transparent utility for navbar dark and light */
+.navbar.bg-transparent {
   @media(min-width: 992px) {
     background-color: transparent !important;
     box-shadow: none !important;
@@ -208,13 +209,13 @@ body {
   }
 }
 
-.navbar-inverse.bg-transparent {
+.navbar-dark.bg-transparent {
   .nav-item {
     .nav-link {
       color: #fff;
 
       &--rounded {
-        @media(min-width: 992px) {
+        @media(min-width: 1200px) {
           border-color: #fff;
           color: #fff;
 
@@ -239,7 +240,6 @@ body {
 
 /* off-canvas navigation */
 .off-wrapper {
-
   position: relative;
   overflow: hidden;
 
@@ -269,7 +269,7 @@ body {
     .off-wrapper-menu {
       left: 0;
 
-    @include transform(translate3d(-50%, 0, 0));
+      @include transform(translate3d(-50%, 0, 0));
     }
   }
 
@@ -280,7 +280,6 @@ body {
       @include transform(translate3d(50%, 0, 0));
     }
   }
-
 
   .off-wrapper-content {
     position: relative;
@@ -293,26 +292,24 @@ body {
   .off-wrapper-menu {
     position: fixed;
     overflow-y: scroll;
-    right: 0;
     top: 0;
     z-index: 1;
     width: 290px;
     height: 100%;
-    background: #2a313a;
+    background: $offCanvasSidebarBg;
     padding: 24px 20px;
 
     @include transition(transform 0.3s ease-out);
-    @include transform(translate3d(50%, 0, 0));
 
     .menu-title {
       font-size: 1.4rem;
-      color: #fff;
+      color: $offCanvasTitleColor;
       margin-bottom: 25px;
       padding-left: 0.5em;
     }
 
     .nav-link {
-      color: #fff;
+      color: $offCanvasLinkColor;
       font-size: 15px;
 
       i {

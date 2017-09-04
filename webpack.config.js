@@ -10,10 +10,11 @@ var plugins = [
     filename: 'theme.css'
   }),
   new webpack.ProvidePlugin({
-    $: 'jquery',
-    jQuery: 'jquery',
-    'window.jQuery': 'jquery',
-    Tether: 'tether',
+   $: 'jquery',
+   jQuery: 'jquery',
+   'window.jQuery': 'jquery',
+   Popper: ['popper.js', 'default'],
+   Tether: 'tether'
   }),
   new webpack.optimize.CommonsChunkPlugin({name: 'vendor', filename: 'vendor.bundle.js'})
 ]
