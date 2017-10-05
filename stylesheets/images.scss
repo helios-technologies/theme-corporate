@@ -1,0 +1,33 @@
+/*Path*/
+$path-assets-images: $imagesPath + "/assets/images/";
+$path-bgs: $imagesPath + "/bgs/";
+$path-buttons: $imagesPath + "/buttons/";
+$path-customers: $imagesPath + "/customers/";
+$path-devices: $imagesPath + "/devices/";
+$path-ecommerce: $imagesPath + "/ecommerce/";
+$path-emails: $imagesPath + "/emails/";
+$path-graphics: $imagesPath +"/graphics/";
+$path-icons: $imagesPath + "/icons/";
+$path-logos: $imagesPath + "/logos/";
+$path-project: $imagesPath + "/project/";
+$path-restaurant: $imagesPath + "/restaurant/";
+$path-screenshots: $imagesPath + "/screenshots/";
+$path-speakers: $imagesPath + "/speakers/";
+$path-uifaces: $imagesPath + "/uifaces/";
+$path-unsplash: $imagesPath + "/unsplash/";
+
+/*Home*/
+$index-bg: $path-unsplash + "michael-benz-189971.jpg";
+$index-bg2: $path-unsplash + "photo-1479243396208-be1751535cdb.jpg";
+
+/*index-app*/
+$index-app-bg: $path-unsplash + "jared-erondu-10472.jpg";
+
+/*index-features*/
+$index-features-bg: $path-unsplash + "photo-1479243396208-be1751535cdb.jpg";
+
+/*index-mobile-2*/
+$index-mobile-2: $path-graphics + "spacial-bg.jpg";
+
+/*index-mobile-4*/
+$index-mobile-4: $path-graphics + "mobile-4-1.jpg";

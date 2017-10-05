@@ -1,5 +1,5 @@
 .index-app-hero {
-  background: url('#{$imagesPath}/unsplash/jared-erondu-10472.jpg');
+  background: url($index-app-bg);
   background-position: center 0;
   background-size: cover;
   background-attachment: fixed;
@@ -30,6 +30,7 @@
   .container {
     position: relative;
     z-index: 10;
+    position: relative;
   }
 
   h2 {
@@ -62,7 +63,7 @@
 
     @include animationDelay(.5s);
   }
-  
+
   .btn-pill {
     margin-top: 30px;
     font-weight: 600;
@@ -76,7 +77,7 @@
 
     @media(max-width: 767px) {
       margin-top: 30px;
-    }   
+    }
   }
 }
 
@@ -144,7 +145,7 @@
       min-height: auto;
     }
   }
-  
+
   img.browser {
     position: absolute;
     left: 450px;

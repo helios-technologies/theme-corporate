@@ -5,7 +5,7 @@
 .index-features-header {
   min-height: 570px;
   position: relative;
-  background: url('../images/unsplash/photo-1479243396208-be1751535cdb.jpg');
+  background: url($index-features-bg);
   background-size: cover;
   background-position: center center;
 
@@ -174,7 +174,7 @@
       min-height: auto;
     }
   }
-  
+
   img.browser {
     position: absolute;
     left: 450px;

@@ -172,7 +172,7 @@
       text-align: center;
     }
   }
-  
+
   .devices {
     position: relative;
     top: -90px;
@@ -228,7 +228,7 @@
 
 .index-mobile-call-to-action {
   margin-top: 90px;
-  background: url('../images/graphics/mobile-4-1.jpg');
+  background: url($index-mobile-4);
 
   .container {
     @media (min-width: 1200px) {
