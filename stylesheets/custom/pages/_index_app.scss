@@ -1,5 +1,5 @@
 .index-app-hero {
-  background: url('../images/unsplash/jared-erondu-10472.jpg');
+  background: url('#{$imagesPath}/unsplash/jared-erondu-10472.jpg');
   background-position: center 0;
   background-size: cover;
   background-attachment: fixed;
@@ -28,6 +28,7 @@
   }
 
   .container {
+    position: relative;
     z-index: 10;
   }
 
